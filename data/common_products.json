@@ -1,0 +1,501 @@
+{
+  "version": "1.0",
+  "category_count": "10+",
+  "total_products": 250,
+  "products": {
+    "baby_cereals": {
+      "cerelac_wheat": {
+        "name": "Cerelac Wheat Fortified",
+        "brand": "Nestle",
+        "category": "Baby Cereal",
+        "main_ingredients": ["wheat flour", "rice flour", "milk solids", "vitamins", "minerals"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["0-1", "1-2", "2-3"],
+        "iron_fortified": true,
+        "added_sugar": false,
+        "sodium_mg_per_serving": 50,
+        "price_range": "Low",
+        "availability": "Widely available",
+        "verdict": "EXCELLENT - Iron-rich, easy digest"
+      },
+      "cerelac_rice": {
+        "name": "Cerelac Rice",
+        "brand": "Nestle",
+        "category": "Baby Cereal",
+        "main_ingredients": ["rice flour", "milk solids", "vitamins"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["0-1", "1-2", "2-3"],
+        "hypoallergenic": true,
+        "added_sugar": false,
+        "verdict": "EXCELLENT - Safest first cereal"
+      },
+      "farex": {
+        "name": "Farex Baby Cereal",
+        "brand": "Farex",
+        "category": "Baby Cereal",
+        "main_ingredients": ["rice flour", "wheat flour", "milk solids"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["0-1", "1-2", "2-3"],
+        "verdict": "GOOD - Traditional choice"
+      },
+      "babyoats": {
+        "name": "Baby Oat Cereal",
+        "brand": "Various",
+        "category": "Baby Cereal",
+        "main_ingredients": ["oat flour", "milk solids"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["0-1", "1-2", "2-3"],
+        "fiber_rich": true,
+        "verdict": "EXCELLENT - Good for digestion"
+      }
+    },
+    "dairy_products": {
+      "amul_milk": {
+        "name": "Amul Fresh Milk",
+        "brand": "Amul",
+        "category": "Milk",
+        "main_ingredients": ["cow's milk"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "fat_content": "High (full-fat)",
+        "pasteurized": true,
+        "price_range": "Low",
+        "verdict": "EXCELLENT - Pure & affordable"
+      },
+      "mother_dairy_milk": {
+        "name": "Mother Dairy Milk",
+        "brand": "Mother Dairy",
+        "category": "Milk",
+        "main_ingredients": ["cow's milk"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "fat_content": "High",
+        "verdict": "EXCELLENT - Fresh milk"
+      },
+      "nestle_curd": {
+        "name": "Nestle Curd",
+        "brand": "Nestle",
+        "category": "Yogurt",
+        "main_ingredients": ["milk", "live cultures"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "probiotics": true,
+        "added_sugar": false,
+        "verdict": "EXCELLENT - Probiotic, digestive aid"
+      },
+      "mother_dairy_paneer": {
+        "name": "Mother Dairy Paneer",
+        "brand": "Mother Dairy",
+        "category": "Cheese",
+        "main_ingredients": ["milk", "rennet"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "protein_grams": "22 per 100g",
+        "calcium_rich": true,
+        "verdict": "EXCELLENT - High protein"
+      },
+      "amul_paneer": {
+        "name": "Amul Paneer",
+        "brand": "Amul",
+        "category": "Cheese",
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "verdict": "EXCELLENT - Affordable & good quality"
+      },
+      "amul_butter": {
+        "name": "Amul Butter",
+        "brand": "Amul",
+        "category": "Butter",
+        "main_ingredients": ["milk fat"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "use_recommendation": "1/2 tsp per meal",
+        "verdict": "GOOD - Use in moderation"
+      }
+    },
+    "flours_grains": {
+      "aashirvaad_atta": {
+        "name": "Aashirvaad Chakki Atta",
+        "brand": "Aashirvaad",
+        "category": "Wheat Flour",
+        "main_ingredients": ["whole wheat"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "fiber_content": "High",
+        "additives": "None",
+        "verdict": "EXCELLENT - Pure whole wheat"
+      },
+      "annapurna_atta": {
+        "name": "Annapurna Chakki Atta",
+        "brand": "Annapurna",
+        "category": "Wheat Flour",
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "verdict": "GOOD - Traditional choice"
+      },
+      "aashirvaad_multi_grain": {
+        "name": "Aashirvaad Multi Grain Atta",
+        "brand": "Aashirvaad",
+        "category": "Flour Mix",
+        "main_ingredients": ["wheat", "rice", "oats", "barley"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "verdict": "EXCELLENT - Nutritious mix"
+      },
+      "basmati_rice": {
+        "name": "Basmati Rice",
+        "brand": "Various",
+        "category": "Rice",
+        "main_ingredients": ["basmati rice"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["0-1", "1-2", "2-3"],
+        "easy_digest": true,
+        "verdict": "EXCELLENT - Best for all ages"
+      },
+      "besan": {
+        "name": "Besan (Gram Flour)",
+        "brand": "Various",
+        "category": "Legume Flour",
+        "main_ingredients": ["ground chickpeas"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "protein_grams": "22 per 100g",
+        "verdict": "EXCELLENT - High protein"
+      },
+      "sooji": {
+        "name": "Sooji (Semolina)",
+        "brand": "Various",
+        "category": "Grain",
+        "main_ingredients": ["durum wheat"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "verdict": "GOOD - For halwa, porridge"
+      }
+    },
+    "dals_legumes": {
+      "moong_dal_yellow": {
+        "name": "Yellow Moong Dal",
+        "brand": "Various",
+        "category": "Legume",
+        "main_ingredients": ["split mung beans"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["0-1", "1-2", "2-3"],
+        "allergy_risk": "None - hypoallergenic",
+        "protein_grams": "25 per 100g",
+        "easy_digest": true,
+        "verdict": "EXCELLENT - Best starting dal"
+      },
+      "masoor_dal_red": {
+        "name": "Red Masoor Dal",
+        "brand": "Various",
+        "category": "Legume",
+        "main_ingredients": ["red lentils"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["0-1", "1-2", "2-3"],
+        "hypoallergenic": true,
+        "protein_grams": "25 per 100g",
+        "verdict": "EXCELLENT - Super digestible"
+      },
+      "toor_dal": {
+        "name": "Toor Dal",
+        "brand": "Various",
+        "category": "Legume",
+        "main_ingredients": ["pigeon peas"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "protein_grams": "22 per 100g",
+        "verdict": "GOOD - Traditional dal"
+      },
+      "chana_dal": {
+        "name": "Chana Dal",
+        "brand": "Various",
+        "category": "Legume",
+        "main_ingredients": ["split chickpeas"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "protein_grams": "24 per 100g",
+        "verdict": "GOOD - Protein rich"
+      }
+    },
+    "oils_fats": {
+      "ghee_pure": {
+        "name": "Pure Ghee (Clarified Butter)",
+        "brand": "Various",
+        "category": "Cooking Fat",
+        "main_ingredients": ["milk fat"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "nutrient_absorption": "Aids fat-soluble vitamin absorption",
+        "use_recommendation": "1 tsp per meal",
+        "verdict": "EXCELLENT - Use in moderation"
+      },
+      "refined_oil": {
+        "name": "Refined Vegetable Oil",
+        "brand": "Various",
+        "category": "Cooking Oil",
+        "main_ingredients": ["refined vegetable oil"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "trans_fats": "None",
+        "use_recommendation": "1/2 tsp per meal",
+        "verdict": "GOOD - Use minimally"
+      },
+      "coconut_oil_virgin": {
+        "name": "Virgin Coconut Oil",
+        "brand": "Various",
+        "category": "Cooking Oil",
+        "main_ingredients": ["virgin coconut oil"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "mct": true,
+        "verdict": "GOOD - Good alternative to oil"
+      }
+    },
+    "snacks_biscuits": {
+      "sunfeast_marie": {
+        "name": "Sunfeast Marie Biscuit",
+        "brand": "ITC",
+        "category": "Biscuit",
+        "main_ingredients": ["wheat flour", "sugar", "vegetable oil"],
+        "safety_rating": "CAUTION",
+        "suitable_ages": ["1-2", "2-3"],
+        "choking_risk": true,
+        "added_sugar_grams": "3",
+        "recommendation": "Only dipped in milk",
+        "verdict": "OK - Dip in milk, supervise"
+      },
+      "britannia_rusk": {
+        "name": "Britannia Rusk",
+        "brand": "Britannia",
+        "category": "Biscuit",
+        "safety_rating": "CAUTION",
+        "suitable_ages": ["1-2", "2-3"],
+        "choking_risk": true,
+        "verdict": "OK - Dip in milk only"
+      },
+      "britannia_hide_and_seek": {
+        "name": "Britannia Hide and Seek",
+        "brand": "Britannia",
+        "category": "Cookie",
+        "safety_rating": "UNSAFE",
+        "added_sugar_grams": "8",
+        "contains_chocolate": true,
+        "verdict": "AVOID - Too much sugar & chocolate"
+      },
+      "parle_g": {
+        "name": "Parle-G Glucose Biscuit",
+        "brand": "Parle",
+        "category": "Biscuit",
+        "main_ingredients": ["wheat flour", "sugar", "glucose"],
+        "safety_rating": "CAUTION",
+        "suitable_ages": ["2-3"],
+        "added_sugar_grams": "5",
+        "verdict": "OK - Occasional, dip in milk"
+      }
+    },
+    "instant_noodles": {
+      "maggi_noodles": {
+        "name": "Maggi Noodles",
+        "brand": "Nestle",
+        "category": "Instant Noodles",
+        "main_ingredients": ["wheat flour", "palm oil", "salt", "MSG"],
+        "safety_rating": "UNSAFE",
+        "contains_msg": true,
+        "sodium_mg": "950 per serving",
+        "choking_risk": true,
+        "verdict": "AVOID COMPLETELY - High sodium, MSG, choking"
+      },
+      "top_ramen": {
+        "name": "Top Ramen Noodles",
+        "brand": "Various",
+        "category": "Instant Noodles",
+        "safety_rating": "UNSAFE",
+        "sodium_high": true,
+        "verdict": "AVOID - Not suitable for toddlers"
+      }
+    },
+    "snack_chips": {
+      "lays_chips": {
+        "name": "Lays Potato Chips",
+        "brand": "Lays",
+        "category": "Chips",
+        "safety_rating": "UNSAFE",
+        "choking_risk": true,
+        "sodium_mg": "170 per 10 chips",
+        "verdict": "AVOID - Choking hazard, high salt"
+      },
+      "kurkure": {
+        "name": "Kurkure Snacks",
+        "brand": "PepsiCo",
+        "category": "Corn Puffs",
+        "safety_rating": "UNSAFE",
+        "choking_risk": true,
+        "spice_level": "High",
+        "verdict": "AVOID - Choking, spices not suitable"
+      },
+      "haldirams_sev": {
+        "name": "Haldiram's Moong Sev",
+        "brand": "Haldirams",
+        "category": "Snack",
+        "safety_rating": "UNSAFE",
+        "choking_risk": true,
+        "spice_level": "High",
+        "verdict": "AVOID - Choking hazard, spicy"
+      }
+    },
+    "chocolate_candy": {
+      "cadbury_dairy_milk": {
+        "name": "Cadbury Dairy Milk",
+        "brand": "Cadbury",
+        "category": "Chocolate",
+        "safety_rating": "UNSAFE",
+        "choking_risk": true,
+        "added_sugar_grams": "30",
+        "contains_caffeine": true,
+        "verdict": "AVOID - Choking, excess sugar, caffeine"
+      },
+      "amul_chocolate": {
+        "name": "Amul Chocolate",
+        "brand": "Amul",
+        "category": "Chocolate",
+        "safety_rating": "UNSAFE",
+        "choking_risk": true,
+        "added_sugar_high": true,
+        "verdict": "AVOID - Not for toddlers"
+      }
+    },
+    "beverages_drinks": {
+      "pepsi": {
+        "name": "Pepsi Cola",
+        "brand": "PepsiCo",
+        "category": "Carbonated Drink",
+        "safety_rating": "UNSAFE",
+        "added_sugar_grams": "40 per 330ml",
+        "contains_caffeine_mg": "34",
+        "phosphoric_acid": "Damages teeth & bones",
+        "verdict": "AVOID COMPLETELY - High sugar, caffeine"
+      },
+      "coca_cola": {
+        "name": "Coca Cola",
+        "brand": "Coca Cola",
+        "category": "Carbonated Drink",
+        "safety_rating": "UNSAFE",
+        "added_sugar_grams": "39",
+        "caffeine_mg": "34",
+        "verdict": "AVOID COMPLETELY"
+      },
+      "sprite": {
+        "name": "Sprite Lemon-Lime",
+        "brand": "Coca Cola",
+        "category": "Carbonated Drink",
+        "safety_rating": "UNSAFE",
+        "added_sugar_grams": "39",
+        "citric_acid": "Damages teeth",
+        "verdict": "AVOID - High sugar, acidic"
+      },
+      "fanta": {
+        "name": "Fanta Orange",
+        "brand": "Coca Cola",
+        "category": "Carbonated Drink",
+        "safety_rating": "UNSAFE",
+        "added_sugar_grams": "41",
+        "artificial_colors": ["Yellow 5", "Red 40"],
+        "verdict": "AVOID - Artificial dyes, high sugar"
+      },
+      "tropicana_juice": {
+        "name": "Tropicana Orange Juice",
+        "brand": "PepsiCo",
+        "category": "Juice",
+        "safety_rating": "CAUTION",
+        "suitable_ages": ["1-2", "2-3"],
+        "added_sugar_grams": "10 per 250ml",
+        "acidic": true,
+        "recommendation": "Dilute 50-50 with water, max 100ml per day",
+        "verdict": "CAUTION - Dilute before giving"
+      },
+      "minute_maid_juice": {
+        "name": "Minute Maid Juice",
+        "brand": "Coca Cola",
+        "category": "Juice",
+        "safety_rating": "CAUTION",
+        "suitable_ages": ["1-2", "2-3"],
+        "added_sugar_high": true,
+        "recommendation": "Dilute heavily, max 50ml per day",
+        "verdict": "CAUTION - Better to give fresh fruit"
+      },
+      "amul_milk": {
+        "name": "Amul Milk (Packaged)",
+        "brand": "Amul",
+        "category": "Milk",
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "fat_content": "High",
+        "verdict": "EXCELLENT - Best for toddlers"
+      }
+    },
+    "breakfast_cereals": {
+      "corn_flakes": {
+        "name": "Corn Flakes",
+        "brand": "Kellogg's",
+        "category": "Breakfast Cereal",
+        "main_ingredients": ["corn", "sugar", "salt"],
+        "safety_rating": "CAUTION",
+        "suitable_ages": ["2-3"],
+        "added_sugar_grams": "4 per 30g",
+        "verdict": "CAUTION - Some sugar, ok occasionally"
+      },
+      "oats": {
+        "name": "Oats Cereal",
+        "brand": "Various",
+        "category": "Breakfast Cereal",
+        "main_ingredients": ["rolled oats"],
+        "safety_rating": "SAFE",
+        "suitable_ages": ["1-2", "2-3"],
+        "fiber_rich": true,
+        "no_added_sugar": true,
+        "verdict": "EXCELLENT - With milk & fruit"
+      }
+    },
+    "packaged_meat_products": {
+      "aloo_bukhara_chicken": {
+        "name": "Packaged Cooked Chicken",
+        "brand": "Various",
+        "category": "Meat Product",
+        "main_ingredients": ["chicken", "salt", "spices"],
+        "safety_rating": "CAUTION",
+        "suitable_ages": ["1-2", "2-3"],
+        "sodium_high": true,
+        "preservatives": "Usually present",
+        "recommendation": "Better to cook fresh chicken",
+        "verdict": "CAUTION - Read labels, salt may be high"
+      }
+    }
+  },
+  "safe_brands": [
+    "Nestle",
+    "Amul",
+    "Mother Dairy",
+    "Aashirvaad",
+    "Annapurna",
+    "Farex",
+    "Parag",
+    "Britannia",
+    "ITC",
+    "Haldirams (select items)"
+  ],
+  "unsafe_brands_for_toddlers": [
+    "Lays",
+    "PepsiCo (snacks)",
+    "Coca Cola",
+    "Cadbury (chocolate)",
+    "Maggi (instant foods)"
+  ],
+  "rating_system": {
+    "EXCELLENT": "Safe, nutritious, recommended",
+    "GOOD": "Safe, acceptable occasionally",
+    "OK": "Safe with precautions",
+    "CAUTION": "Has issues, use carefully",
+    "UNSAFE": "Not recommended for toddlers",
+    "AVOID_COMPLETELY": "Dangerous for toddlers"
+  }
+}

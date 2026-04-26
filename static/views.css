@@ -1,0 +1,514 @@
+/* ===================================
+   VIEWS - Profile, Recent Searches, Settings
+   ToddlerBites - Single-page view switching
+   =================================== */
+
+.content-views {
+    position: relative;
+    min-height: 400px;
+}
+
+.content-view {
+    display: none;
+    animation: viewFadeIn 0.3s ease;
+}
+
+.content-view.active {
+    display: block;
+}
+
+@keyframes viewFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.view-card {
+    animation: viewSlideIn 0.35s ease;
+}
+
+@keyframes viewSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===================================
+   PROFILE FORM
+   =================================== */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.profile-form .input-field {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 14px;
+    font-size: 15px;
+    background: #fafafa;
+    color: #333;
+    transition: all 0.25s ease;
+}
+
+.profile-form .input-field:focus {
+    outline: none;
+    border-color: #66bb6a;
+    background: #fff;
+}
+
+/* ===================================
+   RECENT SEARCHES CARDS
+   =================================== */
+.search-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.search-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 16px;
+    border: 2px solid #eee;
+    transition: all 0.25s ease;
+}
+
+.search-card:hover {
+    border-color: rgba(102, 187, 106, 0.4);
+    box-shadow: 0 4px 16px rgba(102, 187, 106, 0.1);
+}
+
+.search-card-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    background: #e8f5e9;
+    flex-shrink: 0;
+}
+
+.search-card-image.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #81c784;
+}
+
+.search-card-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.search-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.search-card-meta {
+    font-size: 13px;
+    color: #888;
+}
+
+.search-card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.search-card-badge.safe {
+    background: rgba(102, 187, 106, 0.2);
+    color: #2e7d32;
+}
+
+.search-card-badge.caution {
+    background: rgba(255, 152, 0, 0.2);
+    color: #e65100;
+}
+
+.search-card-badge.unsuitable {
+    background: rgba(244, 67, 54, 0.15);
+    color: #c62828;
+}
+
+.search-card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-card-actions .btn-sm,
+.btn-sm {
+    padding: 8px 14px;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #e0e0e0;
+    color: #555;
+}
+
+.btn-outline:hover {
+    border-color: #66bb6a;
+    color: #2e7d32;
+    background: rgba(102, 187, 106, 0.08);
+}
+
+.search-card-empty {
+    text-align: center;
+    padding: 48px 24px;
+    color: #888;
+}
+
+.search-card-empty i {
+    font-size: 48px;
+    color: #ddd;
+    margin-bottom: 16px;
+    display: block;
+}
+
+/* ===================================
+   SETTINGS
+   =================================== */
+.settings-section {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.settings-section:last-of-type {
+    border-bottom: none;
+}
+
+.settings-heading {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.settings-heading i {
+    color: #66bb6a;
+}
+
+.toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.toggle-row span {
+    font-size: 15px;
+    color: #444;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    border-radius: 28px;
+    transition: 0.3s;
+}
+
+.toggle-slider::before {
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle input:checked + .toggle-slider {
+    background: #66bb6a;
+}
+
+.toggle input:checked + .toggle-slider::before {
+    transform: translateX(24px);
+}
+
+.toggle input:focus + .toggle-slider {
+    box-shadow: 0 0 0 3px rgba(102, 187, 106, 0.3);
+}
+
+.btn-outline-danger {
+    background: transparent;
+    border: 2px solid #e57373;
+    color: #c62828;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.25s ease;
+}
+
+.btn-outline-danger:hover {
+    background: rgba(244, 67, 54, 0.1);
+}
+
+.btn-outline-danger.btn-sm {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+/* ===================================
+   MODAL - Logout Confirmation
+   =================================== */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.modal.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    animation: modalSlideIn 0.3s ease;
+}
+
+.modal-sm {
+    width: 100%;
+    max-width: 400px;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px 0;
+}
+
+.modal-header h3 {
+    font-size: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-header h3 i {
+    color: #66bb6a;
+}
+
+.modal-close {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.modal-close:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.modal-body {
+    padding: 24px;
+}
+
+.modal-body p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.modal-footer {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    padding: 0 24px 24px;
+}
+
+.modal-footer .btn {
+    padding: 12px 20px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #e0e0e0;
+    color: #555;
+}
+
+.btn-outline:hover {
+    border-color: #ccc;
+    background: #f5f5f5;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #e57373 0%, #ef5350 100%);
+    color: #fff;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-danger:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+/* ===================================
+   DROPDOWN ACTIVE STATE
+   =================================== */
+.dropdown-item.active {
+    background: rgba(102, 187, 106, 0.2);
+    color: #2e7d32;
+}
+
+.dropdown-item.active i {
+    color: #2e7d32;
+}
+
+/* ===================================
+   DARK MODE
+   =================================== */
+body.dark-mode {
+    background: linear-gradient(135deg, #1a2f24 0%, #2d1f1a 50%, #1e2a35 100%);
+}
+
+body.dark-mode .header,
+body.dark-mode .rate-limit-panel,
+body.dark-mode .card,
+body.dark-mode .view-card {
+    background: rgba(40, 44, 52, 0.95);
+}
+
+body.dark-mode .app-title,
+body.dark-mode .card-title,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #81c784;
+}
+
+body.dark-mode .card-desc,
+body.dark-mode .app-subtitle,
+body.dark-mode .search-card-meta {
+    color: #aaa;
+}
+
+body.dark-mode .search-card {
+    background: rgba(50, 55, 65, 0.8);
+    border-color: #444;
+}
+
+body.dark-mode .input-field,
+body.dark-mode .input-select {
+    background: #2d3238;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-mode .modal-content {
+    background: #2d3238;
+}
+
+body.dark-mode .modal-header h3,
+body.dark-mode .modal-body p {
+    color: #e0e0e0;
+}

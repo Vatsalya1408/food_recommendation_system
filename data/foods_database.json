@@ -1,0 +1,1570 @@
+{
+  "version": "1.0",
+  "last_updated": "2024-01-15",
+  "total_foods": 520,
+  "foods": {
+    "baby_cereals": {
+      "cerelac_wheat": {
+        "name": "Cerelac Wheat",
+        "category": "Baby Cereal",
+        "brand": "Nestle",
+        "main_ingredients": ["wheat flour", "rice flour", "milk solids", "soy lecithin", "vitamins", "minerals"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["wheat", "milk", "soy"],
+        "choking_risk": false,
+        "nutritional_value": "High - Iron fortified",
+        "preparation_methods": ["mix with milk", "mix with water"],
+        "recommended_serving": "2-3 spoons",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "Start from 6 months, mix with breast milk or formula"},
+          "1-2": {"safe": true, "notes": "Can give 1-2 servings per day"},
+          "2-3": {"safe": true, "notes": "Can use as breakfast base"}
+        },
+        "verdict": "SAFE",
+        "why": "Iron-fortified, easily digestible, widely recommended by pediatricians"
+      },
+      "cerelac_rice": {
+        "name": "Cerelac Rice",
+        "category": "Baby Cereal",
+        "brand": "Nestle",
+        "main_ingredients": ["rice flour", "milk solids", "vitamins", "minerals"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["milk"],
+        "choking_risk": false,
+        "nutritional_value": "Medium - carbohydrates",
+        "preparation_methods": ["mix with milk", "mix with water"],
+        "recommended_serving": "2-3 spoons",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "Hypoallergenic, good first cereal from 4-6 months"},
+          "1-2": {"safe": true, "notes": "Can give daily"},
+          "2-3": {"safe": true, "notes": "Can use as breakfast"}
+        },
+        "verdict": "SAFE",
+        "why": "Easiest to digest, least allergenic, perfect starter cereal"
+      },
+      "cerelac_multi_grain": {
+        "name": "Cerelac Multi Grain",
+        "category": "Baby Cereal",
+        "brand": "Nestle",
+        "main_ingredients": ["wheat flour", "rice flour", "oat flour", "barley flour", "milk solids", "vitamins"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["wheat", "barley", "oats", "milk"],
+        "choking_risk": false,
+        "nutritional_value": "High - Multiple grains",
+        "preparation_methods": ["mix with milk", "mix with water"],
+        "recommended_serving": "3-4 spoons",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Wait until 10+ months, too complex for young infants"},
+          "1-2": {"safe": true, "notes": "Can start around 12 months"},
+          "2-3": {"safe": true, "notes": "Great for balanced nutrition"}
+        },
+        "verdict": "SAFE",
+        "why": "Provides diverse nutrients, good fiber content"
+      },
+      "horlicks_junior": {
+        "name": "Horlicks Junior",
+        "category": "Malt-based Drink",
+        "brand": "GSK",
+        "main_ingredients": ["barley", "wheat", "milk solids", "vitamins", "minerals", "sugar"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["wheat", "barley", "milk"],
+        "choking_risk": false,
+        "added_sugar": "Yes - 5g per serving",
+        "nutritional_value": "Medium - Fortified",
+        "preparation_methods": ["mix with milk"],
+        "recommended_serving": "2-3 spoons in milk",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Not recommended due to added sugar and complexity"},
+          "1-2": {"safe": "CAUTION", "notes": "Only occasional, contains added sugar"},
+          "2-3": {"safe": true, "notes": "Can give 2-3 times per week maximum"}
+        },
+        "verdict": "CAUTION",
+        "why": "Contains added sugar, not ideal for regular consumption before age 2"
+      },
+      "babyoat_cereal": {
+        "name": "Baby Oat Cereal",
+        "category": "Baby Cereal",
+        "brand": "Various",
+        "main_ingredients": ["oat flour", "milk solids"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["oats (gluten-free variety safer)"],
+        "choking_risk": false,
+        "nutritional_value": "High - Beta-glucans, fiber",
+        "preparation_methods": ["mix with milk"],
+        "recommended_serving": "2-3 spoons",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "Good from 6+ months, helps with constipation"},
+          "1-2": {"safe": true, "notes": "Excellent daily option"},
+          "2-3": {"safe": true, "notes": "Great for digestion"}
+        },
+        "verdict": "SAFE",
+        "why": "Highly nutritious, good fiber, aids digestion"
+      }
+    },
+    "baby_food_purees": {
+      "farex": {
+        "name": "Farex Baby Cereal",
+        "category": "Baby Cereal",
+        "brand": "Farex",
+        "main_ingredients": ["rice flour", "wheat flour", "milk solids", "vitamins"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["wheat", "milk"],
+        "choking_risk": false,
+        "nutritional_value": "High - Iron fortified",
+        "preparation_methods": ["mix with milk", "mix with water"],
+        "recommended_serving": "2-3 spoons",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "From 4-6 months"},
+          "1-2": {"safe": true, "notes": "Daily use acceptable"},
+          "2-3": {"safe": true, "notes": "Can combine with other foods"}
+        },
+        "verdict": "SAFE",
+        "why": "Traditional, iron-rich, easily available in India"
+      },
+      "heinz_apple_puree": {
+        "name": "Heinz Apple Puree",
+        "category": "Fruit Puree",
+        "brand": "Heinz",
+        "main_ingredients": ["apple puree", "vitamin C"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "Medium - Natural sugars, vitamin C",
+        "preparation_methods": ["serve as is", "mix with cereal"],
+        "recommended_serving": "3-4 spoons",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "Can start from 6+ months"},
+          "1-2": {"safe": true, "notes": "Good daily snack"},
+          "2-3": {"safe": true, "notes": "Can serve daily"}
+        },
+        "verdict": "SAFE",
+        "why": "No added sugar, single ingredient, easy to digest"
+      },
+      "ella_kitchen_puree": {
+        "name": "Ella's Kitchen Organic Puree",
+        "category": "Organic Puree",
+        "brand": "Ella's Kitchen",
+        "main_ingredients": ["organic vegetables/fruits", "no additives"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["Depends on flavor"],
+        "choking_risk": false,
+        "nutritional_value": "High - Organic",
+        "preparation_methods": ["serve as is"],
+        "recommended_serving": "1 pouch",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "From 6+ months"},
+          "1-2": {"safe": true, "notes": "Great option"},
+          "2-3": {"safe": true, "notes": "Can serve regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Organic, no preservatives, no added sugar"
+      }
+    },
+    "indian_packaged_foods": {
+      "aashirvaad_multigrain_atta": {
+        "name": "Aashirvaad Multi Grain Atta",
+        "category": "Flour/Atta",
+        "brand": "Aashirvaad",
+        "main_ingredients": ["wheat", "rice", "oats", "barley", "jowar", "maize"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["wheat", "grains"],
+        "choking_risk": false,
+        "nutritional_value": "High - Multiple grains",
+        "preparation_methods": ["make roti", "make porridge", "make khichdi"],
+        "recommended_serving": "In moderation",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Not suitable, too complex"},
+          "1-2": {"safe": true, "notes": "Make soft roti or porridge"},
+          "2-3": {"safe": true, "notes": "Can use regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Nutritious blend of grains, no added sugar or preservatives"
+      },
+      "annapurna_atta": {
+        "name": "Annapurna Chakki Atta",
+        "category": "Flour/Atta",
+        "brand": "Annapurna",
+        "main_ingredients": ["wheat"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["wheat", "gluten"],
+        "choking_risk": false,
+        "nutritional_value": "Medium - Whole wheat",
+        "preparation_methods": ["make soft roti", "porridge"],
+        "recommended_serving": "In moderation",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Too hard to digest"},
+          "1-2": {"safe": true, "notes": "Make very soft roti"},
+          "2-3": {"safe": true, "notes": "Regular use fine"}
+        },
+        "verdict": "SAFE",
+        "why": "Pure whole wheat, no additives"
+      },
+      "basmati_rice": {
+        "name": "Basmati Rice",
+        "category": "Rice",
+        "brand": "Various",
+        "main_ingredients": ["basmati rice"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None - gluten free"],
+        "choking_risk": false,
+        "nutritional_value": "Medium - Carbohydrates",
+        "preparation_methods": ["cook and mash", "make khichdi", "make rice porridge"],
+        "recommended_serving": "1/4 cup cooked",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "Cook well, mash thoroughly from 6+ months"},
+          "1-2": {"safe": true, "notes": "Soft rice or risotto form"},
+          "2-3": {"safe": true, "notes": "Can serve as regular food"}
+        },
+        "verdict": "SAFE",
+        "why": "Pure grain, easily digestible, safe for all ages"
+      },
+      "britannia_rusk": {
+        "name": "Britannia Rusk",
+        "category": "Baked Good",
+        "brand": "Britannia",
+        "main_ingredients": ["wheat flour", "sugar", "vegetable oil", "salt"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["wheat"],
+        "choking_risk": true,
+        "added_sugar": "Yes - moderate",
+        "nutritional_value": "Low-Medium",
+        "preparation_methods": ["dip in milk", "eat dry"],
+        "recommended_serving": "1-2 rusks per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Choking hazard"},
+          "1-2": {"safe": "CAUTION", "notes": "Only if well-dipped in milk, supervise"},
+          "2-3": {"safe": true, "notes": "Can eat with milk"}
+        },
+        "verdict": "CAUTION",
+        "why": "Choking risk, contains added sugar, supervise while eating"
+      },
+      "maggi_noodles": {
+        "name": "Maggi Noodles",
+        "category": "Instant Noodles",
+        "brand": "Maggi",
+        "main_ingredients": ["wheat flour", "palm oil", "salt", "MSG", "additives"],
+        "safe_for_ages": [],
+        "allergenic": true,
+        "common_allergens": ["wheat", "soy"],
+        "choking_risk": true,
+        "added_sugar": false,
+        "added_salt": "High - 950mg per serving",
+        "nutritional_value": "Low",
+        "preparation_methods": ["boil"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Absolutely NOT safe - high sodium, MSG, choking hazard"},
+          "1-2": {"safe": false, "notes": "Avoid completely - too much salt and additives"},
+          "2-3": {"safe": false, "notes": "Not recommended - high sodium bad for kidneys"}
+        },
+        "verdict": "UNSAFE",
+        "why": "High sodium (exceeds daily limit for toddlers), contains MSG and additives, choking hazard"
+      },
+      "indofil_ghee": {
+        "name": "Indofil Ghee",
+        "category": "Cooking Fat",
+        "brand": "Indofil",
+        "main_ingredients": ["pure ghee", "milk fat"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["milk"],
+        "choking_risk": false,
+        "nutritional_value": "High - Fat-soluble vitamins",
+        "preparation_methods": ["cook with", "pour on food"],
+        "recommended_serving": "1 tsp per meal",
+        "age_specific": {
+          "0-1": {"safe": "CAUTION", "notes": "Can use in minimal amounts from 10+ months"},
+          "1-2": {"safe": true, "notes": "1 tsp per meal is fine"},
+          "2-3": {"safe": true, "notes": "Can use regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Pure milk fat, aids nutrient absorption, good for brain development"
+      },
+      "mother_dairy_paneer": {
+        "name": "Mother Dairy Paneer",
+        "category": "Dairy - Cheese",
+        "brand": "Mother Dairy",
+        "main_ingredients": ["milk", "microbial rennet", "salt"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["milk"],
+        "choking_risk": false,
+        "nutritional_value": "High - Protein, calcium",
+        "preparation_methods": ["cook and mash", "add to khichdi", "make soft pieces"],
+        "recommended_serving": "15-20g per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Too hard, wait for soft chewing"},
+          "1-2": {"safe": true, "notes": "Cook well, mash, or make soft pieces"},
+          "2-3": {"safe": true, "notes": "Can serve regularly, dice into small pieces"}
+        },
+        "verdict": "SAFE",
+        "why": "Excellent source of protein and calcium for bone development"
+      },
+      "nestle_curd": {
+        "name": "Nestle Curd",
+        "category": "Dairy - Yogurt",
+        "brand": "Nestle",
+        "main_ingredients": ["milk", "live cultures", "natural yogurt"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["milk"],
+        "choking_risk": false,
+        "added_sugar": false,
+        "nutritional_value": "High - Probiotics, calcium",
+        "preparation_methods": ["serve as is", "mix with fruit"],
+        "recommended_serving": "100-150g per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Plain cow's milk yogurt not recommended until 12+ months"},
+          "1-2": {"safe": true, "notes": "Unsweetened curd is great"},
+          "2-3": {"safe": true, "notes": "Can serve daily"}
+        },
+        "verdict": "SAFE",
+        "why": "Live cultures aid digestion, good protein and calcium source"
+      },
+      "amul_butter": {
+        "name": "Amul Butter",
+        "category": "Dairy - Butter",
+        "brand": "Amul",
+        "main_ingredients": ["milk fat", "salt"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["milk"],
+        "choking_risk": false,
+        "nutritional_value": "Medium - Fat, vitamin A",
+        "preparation_methods": ["spread on roti", "cook with"],
+        "recommended_serving": "1/2 tsp per meal",
+        "age_specific": {
+          "0-1": {"safe": "CAUTION", "notes": "Minimal amounts only from 10+ months"},
+          "1-2": {"safe": true, "notes": "1/2 tsp per meal fine"},
+          "2-3": {"safe": true, "notes": "Can use regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Pure milk fat, aids vitamin absorption"
+      },
+      "bournvita": {
+        "name": "Bournvita",
+        "category": "Chocolate Drink Mix",
+        "brand": "Cadbury",
+        "main_ingredients": ["cocoa", "sugar", "milk solids", "malt extract", "additives"],
+        "safe_for_ages": [],
+        "allergenic": true,
+        "common_allergens": ["milk", "soy lecithin"],
+        "choking_risk": false,
+        "added_sugar": "Yes - High (12g per 3 tsp)",
+        "contains_caffeine": "Yes - 3-5mg per serving",
+        "nutritional_value": "Low",
+        "preparation_methods": ["mix with milk"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "No - caffeine, high sugar"},
+          "1-2": {"safe": false, "notes": "Avoid - too much sugar for age"},
+          "2-3": {"safe": false, "notes": "Not recommended - excessive sugar"}
+        },
+        "verdict": "UNSAFE",
+        "why": "High sugar content (exceeds daily limit), contains caffeine and additives"
+      },
+      "cadbury_dairy_milk": {
+        "name": "Cadbury Dairy Milk Chocolate",
+        "category": "Confectionery - Chocolate",
+        "brand": "Cadbury",
+        "main_ingredients": ["cocoa solids", "milk solids", "sugar", "vegetable fat", "emulsifiers"],
+        "safe_for_ages": [],
+        "allergenic": true,
+        "common_allergens": ["milk", "soy", "peanut"],
+        "choking_risk": true,
+        "added_sugar": "Yes - Very High (30g per bar)",
+        "contains_caffeine": "Yes - caffeine",
+        "contains_theobromine": "Yes - stimulant",
+        "nutritional_value": "Low",
+        "preparation_methods": ["eat as is"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Absolutely NOT - choking hazard, high sugar, caffeine"},
+          "1-2": {"safe": false, "notes": "Do not give - exceeds sugar limits"},
+          "2-3": {"safe": false, "notes": "Not recommended - high sugar, caffeine"}
+        },
+        "verdict": "UNSAFE",
+        "why": "High sugar, caffeine, theobromine, choking hazard"
+      },
+      "lays_chips": {
+        "name": "Lays Potato Chips",
+        "category": "Snack - Chips",
+        "brand": "Lays",
+        "main_ingredients": ["potatoes", "vegetable oil", "salt", "flavor"],
+        "safe_for_ages": [],
+        "allergenic": false,
+        "common_allergens": ["None typically"],
+        "choking_risk": true,
+        "added_salt": "High - 170mg per 10 chips",
+        "added_sugar": false,
+        "nutritional_value": "Very Low - just fat and salt",
+        "preparation_methods": ["eat as is"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Choking hazard, high salt"},
+          "1-2": {"safe": false, "notes": "Choking hazard, excessive sodium"},
+          "2-3": {"safe": false, "notes": "Not recommended - choking risk, no nutritional value"}
+        },
+        "verdict": "UNSAFE",
+        "why": "Choking hazard, high sodium, no nutritional value"
+      },
+      "kurkure": {
+        "name": "Kurkure Snacks",
+        "category": "Snack - Corn Puffs",
+        "brand": "PepsiCo",
+        "main_ingredients": ["corn meal", "vegetable oil", "salt", "spices", "additives"],
+        "safe_for_ages": [],
+        "allergenic": false,
+        "common_allergens": ["None typical"],
+        "choking_risk": true,
+        "added_salt": "High",
+        "added_sugar": false,
+        "spice_level": "High",
+        "nutritional_value": "Very Low",
+        "preparation_methods": ["eat as is"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Choking hazard, too spicy"},
+          "1-2": {"safe": false, "notes": "Choking hazard, spices bad for stomach"},
+          "2-3": {"safe": false, "notes": "Not recommended - choking hazard, spices, salt"}
+        },
+        "verdict": "UNSAFE",
+        "why": "Choking hazard, high sodium, spices, no nutritional value"
+      },
+      "haldirams_sev": {
+        "name": "Haldiram's Moong Sev",
+        "category": "Snack - Savory",
+        "brand": "Haldirams",
+        "main_ingredients": ["moong flour", "rice flour", "vegetable oil", "salt", "spices"],
+        "safe_for_ages": [],
+        "allergenic": true,
+        "common_allergens": ["spices (may contain allergens)"],
+        "choking_risk": true,
+        "added_salt": "High",
+        "spice_level": "Moderate-High",
+        "nutritional_value": "Low",
+        "preparation_methods": ["eat as is"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Choking hazard, spices"},
+          "1-2": {"safe": false, "notes": "Choking hazard, spices harmful"},
+          "2-3": {"safe": false, "notes": "Not recommended - choking risk, too spicy"}
+        },
+        "verdict": "UNSAFE",
+        "why": "Choking hazard, high sodium, spices not suitable for toddlers"
+      },
+      "haldirams_khakhra": {
+        "name": "Haldiram's Khakhra",
+        "category": "Snack - Flatbread",
+        "brand": "Haldirams",
+        "main_ingredients": ["wheat flour", "vegetable oil", "salt", "spices"],
+        "safe_for_ages": ["2-3"],
+        "allergenic": true,
+        "common_allergens": ["wheat"],
+        "choking_risk": false,
+        "added_salt": "Moderate",
+        "spice_level": "Mild-Moderate",
+        "nutritional_value": "Medium",
+        "preparation_methods": ["eat as is", "break and dip in milk"],
+        "recommended_serving": "Small pieces",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Choking hazard, too spicy"},
+          "1-2": {"safe": "CAUTION", "notes": "Only if softened in milk/gravy, supervise"},
+          "2-3": {"safe": true, "notes": "Can give small pieces with meal"}
+        },
+        "verdict": "CAUTION",
+        "why": "Can cause choking if not softened, contains spices"
+      },
+      "sunfeast_marie_biscuit": {
+        "name": "Sunfeast Marie Biscuit",
+        "category": "Baked Good - Biscuit",
+        "brand": "ITC",
+        "main_ingredients": ["wheat flour", "sugar", "vegetable oil", "salt", "additives"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["wheat"],
+        "choking_risk": true,
+        "added_sugar": "Yes - moderate (3g per biscuit)",
+        "nutritional_value": "Low-Medium",
+        "preparation_methods": ["dip in milk", "eat with tea"],
+        "recommended_serving": "1-2 per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Choking hazard"},
+          "1-2": {"safe": "CAUTION", "notes": "Only dipped in milk, supervise"},
+          "2-3": {"safe": true, "notes": "Can give 1-2 dipped in milk"}
+        },
+        "verdict": "CAUTION",
+        "why": "Choking risk if not softened, contains sugar"
+      },
+      "britannia_hide_and_seek": {
+        "name": "Britannia Hide and Seek",
+        "category": "Baked Good - Cookie",
+        "brand": "Britannia",
+        "main_ingredients": ["wheat flour", "sugar", "vegetable oil", "chocolate chips", "additives"],
+        "safe_for_ages": [],
+        "allergenic": true,
+        "common_allergens": ["wheat", "soy"],
+        "choking_risk": true,
+        "added_sugar": "High - 8g per biscuit",
+        "contains_chocolate": "Yes",
+        "nutritional_value": "Low",
+        "preparation_methods": ["eat as is"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Choking hazard, chocolate, sugar"},
+          "1-2": {"safe": false, "notes": "Too much sugar, choking hazard"},
+          "2-3": {"safe": false, "notes": "Not recommended - excessive sugar"}
+        },
+        "verdict": "UNSAFE",
+        "why": "High sugar, chocolate, choking hazard"
+      },
+      "pepsi": {
+        "name": "Pepsi Cola",
+        "category": "Beverage - Carbonated",
+        "brand": "PepsiCo",
+        "main_ingredients": ["carbonated water", "high fructose corn syrup", "caffeine", "additives"],
+        "safe_for_ages": [],
+        "allergenic": false,
+        "common_allergens": ["None typically"],
+        "choking_risk": false,
+        "added_sugar": "Very High - 40g per 330ml",
+        "contains_caffeine": "Yes - 34mg per 330ml",
+        "contains_phosphoric_acid": "Yes - harmful for calcium",
+        "nutritional_value": "None - empty calories",
+        "preparation_methods": ["drink"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Absolutely NOT - caffeine, high sugar, phosphoric acid"},
+          "1-2": {"safe": false, "notes": "Never - dangerous sugar levels, caffeine"},
+          "2-3": {"safe": false, "notes": "Strictly avoid - high sugar, caffeine, bad for bones"}
+        },
+        "verdict": "UNSAFE",
+        "why": "High sugar (exceeds daily limit), caffeine, phosphoric acid (leaches calcium)"
+      },
+      "coca_cola": {
+        "name": "Coca Cola",
+        "category": "Beverage - Carbonated",
+        "brand": "Coca Cola",
+        "main_ingredients": ["carbonated water", "high fructose corn syrup", "caffeine", "additives"],
+        "safe_for_ages": [],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "added_sugar": "Very High - 39g per 330ml",
+        "contains_caffeine": "Yes - 34mg per 330ml",
+        "contains_phosphoric_acid": "Yes",
+        "nutritional_value": "None",
+        "preparation_methods": ["drink"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Absolutely NOT"},
+          "1-2": {"safe": false, "notes": "Never"},
+          "2-3": {"safe": false, "notes": "Strictly forbidden"}
+        },
+        "verdict": "UNSAFE",
+        "why": "Extreme sugar, caffeine, phosphoric acid"
+      },
+      "sprite": {
+        "name": "Sprite Lemon Lime",
+        "category": "Beverage - Carbonated",
+        "brand": "Coca Cola",
+        "main_ingredients": ["carbonated water", "high fructose corn syrup", "citric acid", "additives"],
+        "safe_for_ages": [],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "added_sugar": "Very High - 39g per 330ml",
+        "contains_caffeine": "No",
+        "contains_citric_acid": "Yes - damages teeth",
+        "nutritional_value": "None",
+        "preparation_methods": ["drink"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Absolutely NOT - high sugar, acid"},
+          "1-2": {"safe": false, "notes": "Never - ruins teeth, high sugar"},
+          "2-3": {"safe": false, "notes": "Avoid - damages teeth, excessive sugar"}
+        },
+        "verdict": "UNSAFE",
+        "why": "High sugar, citric acid damages teeth"
+      },
+      "fanta": {
+        "name": "Fanta Orange",
+        "category": "Beverage - Carbonated",
+        "brand": "Coca Cola",
+        "main_ingredients": ["carbonated water", "high fructose corn syrup", "artificial flavor", "food coloring"],
+        "safe_for_ages": [],
+        "allergenic": false,
+        "common_allergens": ["None typically"],
+        "choking_risk": false,
+        "added_sugar": "Very High - 41g per 330ml",
+        "contains_caffeine": "No",
+        "contains_artificial_colors": "Yes - Yellow 5, Red 40, etc.",
+        "nutritional_value": "None",
+        "preparation_methods": ["drink"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "NO - artificial colors, high sugar"},
+          "1-2": {"safe": false, "notes": "NO - artificial dyes cause hyperactivity"},
+          "2-3": {"safe": false, "notes": "Avoid - artificial colors harmful"}
+        },
+        "verdict": "UNSAFE",
+        "why": "High sugar, artificial dyes cause hyperactivity"
+      },
+      "tropicana_orange_juice": {
+        "name": "Tropicana Orange Juice",
+        "category": "Beverage - Juice",
+        "brand": "PepsiCo",
+        "main_ingredients": ["orange juice concentrate", "water", "added sugar", "preservatives"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "added_sugar": "Yes - 25g per 250ml",
+        "contains_caffeine": "No",
+        "natural_sugars": "15g from oranges + 10g added",
+        "nutritional_value": "Medium - Vitamin C",
+        "preparation_methods": ["drink as is", "dilute with water"],
+        "recommended_serving": "Maximum 100ml per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Not recommended - too acidic for developing teeth/stomach"},
+          "1-2": {"safe": "CAUTION", "notes": "Only diluted with water, max 50ml per day"},
+          "2-3": {"safe": "CAUTION", "notes": "Dilute with water, max 100ml per day"}
+        },
+        "verdict": "CAUTION",
+        "why": "Contains added sugar, acidic, no whole fruit benefits"
+      },
+      "minute_maid_mango_juice": {
+        "name": "Minute Maid Mango Juice",
+        "category": "Beverage - Juice",
+        "brand": "Coca Cola",
+        "main_ingredients": ["mango juice concentrate", "water", "added sugar", "preservatives"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "added_sugar": "Yes - High",
+        "contains_caffeine": "No",
+        "nutritional_value": "Medium - Vitamin A, C",
+        "preparation_methods": ["dilute with water"],
+        "recommended_serving": "Max 50ml per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Not recommended"},
+          "1-2": {"safe": "CAUTION", "notes": "Heavily dilute, max 30ml per day"},
+          "2-3": {"safe": "CAUTION", "notes": "Dilute 50-50, max 50ml"}
+        },
+        "verdict": "CAUTION",
+        "why": "High sugar content, better to give fresh fruits"
+      },
+      "real_juice": {
+        "name": "Real Juice (Mango/Orange)",
+        "category": "Beverage - Juice",
+        "brand": "Dabur",
+        "main_ingredients": ["fruit juice", "water", "added sugar", "preservatives"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "added_sugar": "Yes",
+        "nutritional_value": "Medium",
+        "preparation_methods": ["dilute with water"],
+        "recommended_serving": "Max 50ml diluted",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Not recommended"},
+          "1-2": {"safe": "CAUTION", "notes": "Dilute heavily"},
+          "2-3": {"safe": "CAUTION", "notes": "Dilute 1:1 with water"}
+        },
+        "verdict": "CAUTION",
+        "why": "Added sugar, dilute before giving"
+      },
+      "amul_milk": {
+        "name": "Amul Fresh Milk",
+        "category": "Dairy - Milk",
+        "brand": "Amul",
+        "main_ingredients": ["cow's milk", "no additives"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["milk - lactose"],
+        "choking_risk": false,
+        "nutritional_value": "High - Calcium, protein",
+        "preparation_methods": ["drink warm", "use in cooking"],
+        "recommended_serving": "500ml per day (divided)",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Not recommended - cow's milk not ideal, use formula"},
+          "1-2": {"safe": true, "notes": "Full-fat milk recommended, 500ml/day"},
+          "2-3": {"safe": true, "notes": "Regular milk ideal for growth"}
+        },
+        "verdict": "SAFE",
+        "why": "Pure milk, excellent for bone and brain development"
+      },
+      "amul_lite_milk": {
+        "name": "Amul Lite Milk",
+        "category": "Dairy - Milk",
+        "brand": "Amul",
+        "main_ingredients": ["cow's milk", "reduced fat"],
+        "safe_for_ages": ["2-3"],
+        "allergenic": true,
+        "common_allergens": ["milk"],
+        "choking_risk": false,
+        "fat_content": "Low - not ideal for toddlers",
+        "nutritional_value": "Medium - less fat",
+        "preparation_methods": ["drink warm"],
+        "recommended_serving": "Not recommended",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Not suitable"},
+          "1-2": {"safe": false, "notes": "Not recommended - toddlers need full-fat"},
+          "2-3": {"safe": "CAUTION", "notes": "Not ideal - use full-fat milk instead"}
+        },
+        "verdict": "CAUTION",
+        "why": "Low fat content not ideal for toddler brain development"
+      },
+      "parag_paneer": {
+        "name": "Parag Paneer",
+        "category": "Dairy - Cheese",
+        "brand": "Parag",
+        "main_ingredients": ["milk", "rennet", "salt"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["milk"],
+        "choking_risk": false,
+        "nutritional_value": "High - Protein, calcium",
+        "preparation_methods": ["cook and mash", "add to khichdi"],
+        "recommended_serving": "15-20g per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Wait for soft chewing"},
+          "1-2": {"safe": true, "notes": "Mash well or make soft pieces"},
+          "2-3": {"safe": true, "notes": "Can serve regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Pure paneer, excellent protein source"
+      },
+      "dabur_honey": {
+        "name": "Dabur Honey",
+        "category": "Sweetener - Honey",
+        "brand": "Dabur",
+        "main_ingredients": ["honey"],
+        "safe_for_ages": [],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "contains_spores": "Possible - Clostridium botulinum",
+        "nutritional_value": "Medium - natural sugars",
+        "preparation_methods": ["do not use"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "ABSOLUTELY NO - Botulism risk until 12 months"},
+          "1-2": {"safe": false, "notes": "Still risky - avoid until 2+ years"},
+          "2-3": {"safe": "CAUTION", "notes": "Only after 3 years, pure sources only"}
+        },
+        "verdict": "UNSAFE",
+        "why": "Risk of botulism (Clostridium botulinum spores) before 12 months"
+      },
+      "besan": {
+        "name": "Besan (Gram Flour)",
+        "category": "Flour/Ingredient",
+        "brand": "Various",
+        "main_ingredients": ["ground chickpeas"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["chickpea allergy (rare)"],
+        "choking_risk": false,
+        "nutritional_value": "High - Protein, fiber",
+        "preparation_methods": ["make porridge", "make cheela", "mix with vegetables"],
+        "recommended_serving": "2-3 tbsp per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Too complex for young infants"},
+          "1-2": {"safe": true, "notes": "Make soft porridge or cheela"},
+          "2-3": {"safe": true, "notes": "Great protein source"}
+        },
+        "verdict": "SAFE",
+        "why": "Excellent plant protein, easily digestible"
+      },
+      "sooji": {
+        "name": "Sooji (Semolina)",
+        "category": "Grain/Ingredient",
+        "brand": "Various",
+        "main_ingredients": ["durum wheat semolina"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["wheat", "gluten"],
+        "choking_risk": false,
+        "nutritional_value": "Medium - Carbohydrates",
+        "preparation_methods": ["make halwa", "make porridge", "make upma"],
+        "recommended_serving": "2-3 tbsp per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Complex, wait until 10+ months"},
+          "1-2": {"safe": true, "notes": "Make soft porridge with ghee"},
+          "2-3": {"safe": true, "notes": "Great for meals"}
+        },
+        "verdict": "SAFE",
+        "why": "Easily digestible, traditional Indian grain"
+      },
+      "moong_dal": {
+        "name": "Moong Dal (Yellow)",
+        "category": "Legume/Ingredient",
+        "brand": "Various",
+        "main_ingredients": ["split mung beans"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None - excellent for allergic babies"],
+        "choking_risk": false,
+        "nutritional_value": "High - Protein, carbs",
+        "preparation_methods": ["make dal", "make khichdi", "make porridge"],
+        "recommended_serving": "3-4 tbsp per day",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "From 8-10 months, well-cooked and mashed"},
+          "1-2": {"safe": true, "notes": "Excellent daily food"},
+          "2-3": {"safe": true, "notes": "Great protein source"}
+        },
+        "verdict": "SAFE",
+        "why": "Complete protein, lowest allergy risk, highly digestible"
+      },
+      "masoor_dal": {
+        "name": "Masoor Dal (Red Lentil)",
+        "category": "Legume/Ingredient",
+        "brand": "Various",
+        "main_ingredients": ["red lentils"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None - hypoallergenic"],
+        "choking_risk": false,
+        "nutritional_value": "High - Protein, fiber",
+        "preparation_methods": ["make dal", "make puree", "mix with rice"],
+        "recommended_serving": "3-4 tbsp per day",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "From 8+ months, well-cooked"},
+          "1-2": {"safe": true, "notes": "Daily option"},
+          "2-3": {"safe": true, "notes": "Excellent protein"}
+        },
+        "verdict": "SAFE",
+        "why": "Super digestible, excellent protein, no common allergens"
+      },
+      "toor_dal": {
+        "name": "Toor Dal (Pigeon Pea)",
+        "category": "Legume/Ingredient",
+        "brand": "Various",
+        "main_ingredients": ["pigeon peas"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "High - Protein",
+        "preparation_methods": ["make dal", "make sambar"],
+        "recommended_serving": "3-4 tbsp per day",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "From 9+ months"},
+          "1-2": {"safe": true, "notes": "Good option"},
+          "2-3": {"safe": true, "notes": "Daily use fine"}
+        },
+        "verdict": "SAFE",
+        "why": "Good protein source, traditional Indian dal"
+      },
+      "chana_dal": {
+        "name": "Chana Dal (Bengal Gram)",
+        "category": "Legume/Ingredient",
+        "brand": "Various",
+        "main_ingredients": ["split chickpeas"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["chickpea (rare allergy)"],
+        "choking_risk": false,
+        "nutritional_value": "High - Protein",
+        "preparation_methods": ["make dal", "make porridge"],
+        "recommended_serving": "3-4 tbsp per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Too complex"},
+          "1-2": {"safe": true, "notes": "Good protein"},
+          "2-3": {"safe": true, "notes": "Daily use"}
+        },
+        "verdict": "SAFE",
+        "why": "Good protein, easily cooked"
+      },
+      "urad_dal": {
+        "name": "Urad Dal (Black Gram)",
+        "category": "Legume/Ingredient",
+        "brand": "Various",
+        "main_ingredients": ["black gram"],
+        "safe_for_ages": ["2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "High - Protein",
+        "preparation_methods": ["make dal", "mix with rice"],
+        "recommended_serving": "2-3 tbsp",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Too heavy"},
+          "1-2": {"safe": "CAUTION", "notes": "Can try small amounts if well-cooked"},
+          "2-3": {"safe": true, "notes": "Good protein source"}
+        },
+        "verdict": "SAFE",
+        "why": "Protein-rich but heavier to digest"
+      },
+      "kabuli_chana": {
+        "name": "Kabuli Chana (White Chickpea)",
+        "category": "Legume/Ingredient",
+        "brand": "Various",
+        "main_ingredients": ["chickpeas"],
+        "safe_for_ages": ["2-3"],
+        "allergenic": false,
+        "common_allergens": ["chickpea allergy (very rare)"],
+        "choking_risk": true,
+        "nutritional_value": "High - Protein",
+        "preparation_methods": ["boil and mash", "add to curry"],
+        "recommended_serving": "2-3 tbsp mashed",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Choking hazard"},
+          "1-2": {"safe": "CAUTION", "notes": "Only if well-mashed, supervise"},
+          "2-3": {"safe": true, "notes": "Mash or cut small"}
+        },
+        "verdict": "CAUTION",
+        "why": "Choking risk if not mashed well"
+      },
+      "rajma": {
+        "name": "Rajma (Kidney Beans)",
+        "category": "Legume/Ingredient",
+        "brand": "Various",
+        "main_ingredients": ["kidney beans"],
+        "safe_for_ages": ["2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "High - Protein, fiber",
+        "preparation_methods": ["boil and mash", "make curry"],
+        "recommended_serving": "3-4 tbsp mashed",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Too heavy"},
+          "1-2": {"safe": false, "notes": "Too complex"},
+          "2-3": {"safe": true, "notes": "Good protein source"}
+        },
+        "verdict": "SAFE",
+        "why": "Excellent protein, good fiber"
+      },
+      "carrot": {
+        "name": "Fresh Carrot",
+        "category": "Vegetable",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["carrot"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": true,
+        "nutritional_value": "High - Vitamin A, beta-carotene",
+        "preparation_methods": ["steam and mash", "boil and puree", "grate and soften"],
+        "recommended_serving": "30-40g per day",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "Steam well, puree completely from 6+ months"},
+          "1-2": {"safe": true, "notes": "Steam and mash into small pieces"},
+          "2-3": {"safe": true, "notes": "Cook and cut into small pieces"}
+        },
+        "verdict": "SAFE",
+        "why": "Excellent source of vitamin A, easy to digest when cooked"
+      },
+      "sweet_potato": {
+        "name": "Sweet Potato (Shakarkand)",
+        "category": "Vegetable",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["sweet potato"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "High - Vitamin A, fiber",
+        "preparation_methods": ["bake and mash", "boil and puree"],
+        "recommended_serving": "40-50g per day",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "Boil well and mash from 6+ months"},
+          "1-2": {"safe": true, "notes": "Great daily food"},
+          "2-3": {"safe": true, "notes": "Can eat regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Sweet, nutritious, easily digestible, natural sweetness"
+      },
+      "pumpkin": {
+        "name": "Pumpkin (Kaddu)",
+        "category": "Vegetable",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["pumpkin"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "Medium - Vitamin A",
+        "preparation_methods": ["steam and puree", "boil and mash"],
+        "recommended_serving": "40-50g",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "From 6+ months, well-cooked puree"},
+          "1-2": {"safe": true, "notes": "Good daily option"},
+          "2-3": {"safe": true, "notes": "Can serve regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Mild, easily digestible, good for constipation"
+      },
+      "bottle_gourd": {
+        "name": "Bottle Gourd (Lauki)",
+        "category": "Vegetable",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["bottle gourd"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "Low - mostly water",
+        "preparation_methods": ["boil and mash", "add to khichdi"],
+        "recommended_serving": "40-50g",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "From 6+ months"},
+          "1-2": {"safe": true, "notes": "Good for digestion"},
+          "2-3": {"safe": true, "notes": "Can serve daily"}
+        },
+        "verdict": "SAFE",
+        "why": "Mild, easy to digest, cooling properties"
+      },
+      "spinach": {
+        "name": "Spinach (Palak)",
+        "category": "Vegetable - Leafy Green",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["spinach"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "contains_oxalates": "Yes - but ok in moderation",
+        "nutritional_value": "High - Iron, calcium",
+        "preparation_methods": ["cook and puree", "mix with other vegetables"],
+        "recommended_serving": "20-30g per day",
+        "age_specific": {
+          "0-1": {"safe": "CAUTION", "notes": "High nitrates, better to avoid before 8+ months"},
+          "1-2": {"safe": true, "notes": "Cook well, mix with other foods"},
+          "2-3": {"safe": true, "notes": "Good iron source"}
+        },
+        "verdict": "SAFE",
+        "why": "Good iron and calcium, but cook thoroughly"
+      },
+      "broccoli": {
+        "name": "Broccoli",
+        "category": "Vegetable - Cruciferous",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["broccoli"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "High - Vitamin C, calcium",
+        "preparation_methods": ["steam and puree", "boil well and mash"],
+        "recommended_serving": "30-40g",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "From 6+ months, well-cooked and pureed"},
+          "1-2": {"safe": true, "notes": "Good vegetable"},
+          "2-3": {"safe": true, "notes": "Can serve regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Excellent nutrients, good for immunity"
+      },
+      "cauliflower": {
+        "name": "Cauliflower (Phool Gobhi)",
+        "category": "Vegetable - Cruciferous",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["cauliflower"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "High - Vitamin C",
+        "preparation_methods": ["boil and mash", "steam well"],
+        "recommended_serving": "30-40g",
+        "age_specific": {
+          "0-1": {"safe": "CAUTION", "notes": "May cause gas, start from 8+ months with caution"},
+          "1-2": {"safe": true, "notes": "Good option, cook well"},
+          "2-3": {"safe": true, "notes": "Can serve regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Good nutrients, cook well to reduce gas"
+      },
+      "peas": {
+        "name": "Green Peas",
+        "category": "Vegetable - Legume",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["peas"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": true,
+        "nutritional_value": "High - Protein, fiber",
+        "preparation_methods": ["cook and mash", "add to khichdi"],
+        "recommended_serving": "30-40g",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Choking hazard"},
+          "1-2": {"safe": true, "notes": "Mash well or add to soft foods"},
+          "2-3": {"safe": true, "notes": "Can serve soft or mashed"}
+        },
+        "verdict": "SAFE",
+        "why": "Good protein and fiber, mash before serving"
+      },
+      "tomato": {
+        "name": "Tomato",
+        "category": "Vegetable",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["tomato"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "Medium - Lycopene, vitamin C",
+        "preparation_methods": ["cook and puree", "add to curry"],
+        "recommended_serving": "20-30g per day",
+        "age_specific": {
+          "0-1": {"safe": "CAUTION", "notes": "Acidic, wait until 8+ months"},
+          "1-2": {"safe": true, "notes": "Cook well, add to curries"},
+          "2-3": {"safe": true, "notes": "Can use regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Good nutrients when cooked, acidic so start later"
+      },
+      "cucumber": {
+        "name": "Cucumber",
+        "category": "Vegetable",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["cucumber"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "Low - mostly water",
+        "preparation_methods": ["peel and mash", "add to meals"],
+        "recommended_serving": "30-40g",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Too watery, not enough nutrition"},
+          "1-2": {"safe": "CAUTION", "notes": "Peel well, mash, occasional use"},
+          "2-3": {"safe": true, "notes": "Good for meals"}
+        },
+        "verdict": "CAUTION",
+        "why": "Low nutrition, mostly water, use occasionally"
+      },
+      "apple": {
+        "name": "Apple (Fresh)",
+        "category": "Fruit",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["apple"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": true,
+        "nutritional_value": "High - Fiber, vitamin C",
+        "preparation_methods": ["puree", "grate", "steam and mash"],
+        "recommended_serving": "30-50g",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "From 6+ months, puree or grate"},
+          "1-2": {"safe": true, "notes": "Grate or make soft pieces"},
+          "2-3": {"safe": true, "notes": "Can eat with skin removed"}
+        },
+        "verdict": "SAFE",
+        "why": "Excellent fiber, good for digestion"
+      },
+      "banana": {
+        "name": "Banana (Fresh)",
+        "category": "Fruit",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["banana"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None - very hypoallergenic"],
+        "choking_risk": false,
+        "nutritional_value": "High - Potassium, carbs",
+        "preparation_methods": ["mash", "cut into pieces"],
+        "recommended_serving": "50-75g per day",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "From 6+ months, excellent first fruit"},
+          "1-2": {"safe": true, "notes": "Great daily fruit"},
+          "2-3": {"safe": true, "notes": "Can eat regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Perfect first fruit, no allergens, easy to digest"
+      },
+      "mango": {
+        "name": "Mango (Ripe)",
+        "category": "Fruit",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["mango"],
+        "safe_for_ages": ["0-1", "1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None - may cause skin reaction but not ingestion allergy"],
+        "choking_risk": false,
+        "nutritional_value": "High - Vitamin A, C, fiber",
+        "preparation_methods": ["puree", "mash"],
+        "recommended_serving": "30-40g",
+        "age_specific": {
+          "0-1": {"safe": true, "notes": "From 6+ months, puree well"},
+          "1-2": {"safe": true, "notes": "Great seasonal fruit"},
+          "2-3": {"safe": true, "notes": "Can serve regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Seasonal, nutritious, sweet and easy to eat"
+      },
+      "orange": {
+        "name": "Orange (Fresh)",
+        "category": "Fruit",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["orange"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "acidic": "Yes - citric acid",
+        "nutritional_value": "High - Vitamin C",
+        "preparation_methods": ["extract juice and dilute", "give as pieces"],
+        "recommended_serving": "30ml juice diluted",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Too acidic for developing digestive system"},
+          "1-2": {"safe": "CAUTION", "notes": "Dilute well, or give segments"},
+          "2-3": {"safe": true, "notes": "Can serve fresh juice or segments"}
+        },
+        "verdict": "SAFE",
+        "why": "Good vitamin C, acidic so start later and dilute"
+      },
+      "papaya": {
+        "name": "Papaya (Ripe)",
+        "category": "Fruit",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["papaya"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "High - Vitamin A, C, papain enzyme",
+        "preparation_methods": ["puree", "mash", "chop into pieces"],
+        "recommended_serving": "40-50g",
+        "age_specific": {
+          "0-1": {"safe": "CAUTION", "notes": "Check for ripeness, start from 8+ months"},
+          "1-2": {"safe": true, "notes": "Good for digestion"},
+          "2-3": {"safe": true, "notes": "Excellent regular fruit"}
+        },
+        "verdict": "SAFE",
+        "why": "Good digestion aid, soft texture"
+      },
+      "watermelon": {
+        "name": "Watermelon (Seasonal)",
+        "category": "Fruit",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["watermelon"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "seeds_risk": "Yes - remove all seeds",
+        "nutritional_value": "Medium - mostly water, some vitamin C",
+        "preparation_methods": ["cut into pieces", "remove seeds"],
+        "recommended_serving": "50-75g",
+        "age_specific": {
+          "0-1": {"safe": "CAUTION", "notes": "Choking risk from seeds, mostly water"},
+          "1-2": {"safe": true, "notes": "Remove ALL seeds, supervise"},
+          "2-3": {"safe": true, "notes": "Remove seeds carefully"}
+        },
+        "verdict": "SAFE",
+        "why": "Hydrating, but remove all seeds carefully"
+      },
+      "grapes": {
+        "name": "Grapes (Seedless)",
+        "category": "Fruit",
+        "brand": "Fresh Produce",
+        "main_ingredients": ["grapes"],
+        "safe_for_ages": ["2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": true,
+        "nutritional_value": "Medium - Natural sugars",
+        "preparation_methods": ["cut in quarters", "mash"],
+        "recommended_serving": "30-40g",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Choking hazard"},
+          "1-2": {"safe": "CAUTION", "notes": "Cut in quarters at minimum, supervise"},
+          "2-3": {"safe": true, "notes": "Cut into quarters"}
+        },
+        "verdict": "CAUTION",
+        "why": "Choking hazard if not cut properly"
+      },
+      "boiled_egg": {
+        "name": "Boiled Egg (Whole)",
+        "category": "Protein - Egg",
+        "brand": "Fresh",
+        "main_ingredients": ["chicken egg"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["egg protein"],
+        "choking_risk": false,
+        "nutritional_value": "Very High - Complete protein, choline",
+        "preparation_methods": ["hard boil, mash yolk first", "scramble"],
+        "recommended_serving": "1/2 to 1 egg per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Wait until 10-12 months due to allergy risk"},
+          "1-2": {"safe": true, "notes": "Start with yolk only, then whole egg"},
+          "2-3": {"safe": true, "notes": "Can eat regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Excellent complete protein, but allergy risk so start after 10 months"
+      },
+      "chicken": {
+        "name": "Chicken (Boiled, Skinless)",
+        "category": "Protein - Poultry",
+        "brand": "Fresh",
+        "main_ingredients": ["chicken meat"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None - good option for allergic babies"],
+        "choking_risk": false,
+        "nutritional_value": "Very High - Lean protein, B vitamins",
+        "preparation_methods": ["boil and shred", "mince and cook", "add to curry"],
+        "recommended_serving": "30-40g per day",
+        "age_specific": {
+          "0-1": {"safe": "CAUTION", "notes": "Can start from 8-10 months, well-cooked and shredded"},
+          "1-2": {"safe": true, "notes": "Excellent protein source"},
+          "2-3": {"safe": true, "notes": "Great regular food"}
+        },
+        "verdict": "SAFE",
+        "why": "Lean protein, hypoallergenic, good for growth"
+      },
+      "fish": {
+        "name": "Fish (Boiled, White Fish)",
+        "category": "Protein - Fish",
+        "brand": "Fresh",
+        "main_ingredients": ["white fish"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["fish protein"],
+        "choking_risk": false,
+        "contains_mercury": "Low (white fish)",
+        "nutritional_value": "Very High - Protein, omega-3",
+        "preparation_methods": ["boil and flake", "remove all bones carefully"],
+        "recommended_serving": "20-30g per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Wait until 10-12 months"},
+          "1-2": {"safe": true, "notes": "Start with white fish, remove all bones"},
+          "2-3": {"safe": true, "notes": "Good protein source"}
+        },
+        "verdict": "SAFE",
+        "why": "Excellent protein and omega-3, but allergy risk - introduce after 10 months"
+      },
+      "mutton": {
+        "name": "Mutton (Boiled, Lean)",
+        "category": "Protein - Meat",
+        "brand": "Fresh",
+        "main_ingredients": ["mutton meat"],
+        "safe_for_ages": ["2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "Very High - Iron, protein",
+        "preparation_methods": ["boil until tender", "shred", "mince"],
+        "recommended_serving": "20-30g per day",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Too heavy to digest"},
+          "1-2": {"safe": "CAUTION", "notes": "Very small amounts only if well-cooked"},
+          "2-3": {"safe": true, "notes": "Good iron source"}
+        },
+        "verdict": "SAFE",
+        "why": "High iron content, good for preventing anemia"
+      },
+      "dalda_vegetable_ghee": {
+        "name": "Dalda/Vanaspati (Vegetable Ghee)",
+        "category": "Cooking Fat",
+        "brand": "Various",
+        "main_ingredients": ["hydrogenated vegetable oil", "trans fats"],
+        "safe_for_ages": [],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "contains_trans_fats": "Yes - harmful",
+        "nutritional_value": "Low - unhealthy fats",
+        "preparation_methods": ["do not use"],
+        "recommended_serving": "N/A",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Do not use - trans fats bad for brain"},
+          "1-2": {"safe": false, "notes": "Avoid - trans fats harmful"},
+          "2-3": {"safe": false, "notes": "Not recommended - use real ghee instead"}
+        },
+        "verdict": "UNSAFE",
+        "why": "Contains trans fats which are harmful for development"
+      },
+      "refined_oil": {
+        "name": "Refined Vegetable Oil",
+        "category": "Cooking Oil",
+        "brand": "Various",
+        "main_ingredients": ["refined vegetable oil"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "contains_trans_fats": "No",
+        "nutritional_value": "Medium - pure fat",
+        "preparation_methods": ["cook with in small amounts"],
+        "recommended_serving": "1/2 tsp per meal",
+        "age_specific": {
+          "0-1": {"safe": "CAUTION", "notes": "Minimal use only"},
+          "1-2": {"safe": true, "notes": "1/2 tsp per meal fine"},
+          "2-3": {"safe": true, "notes": "Can use regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Pure fat without trans fats, use in moderation"
+      },
+      "coconut_oil": {
+        "name": "Coconut Oil (Virgin)",
+        "category": "Cooking Oil",
+        "brand": "Various",
+        "main_ingredients": ["virgin coconut oil"],
+        "safe_for_ages": ["1-2", "2-3"],
+        "allergenic": true,
+        "common_allergens": ["coconut (rare allergy)"],
+        "choking_risk": false,
+        "nutritional_value": "Medium - MCT, lauric acid",
+        "preparation_methods": ["cook with in small amounts"],
+        "recommended_serving": "1/2 tsp per meal",
+        "age_specific": {
+          "0-1": {"safe": "CAUTION", "notes": "Can use minimal amounts"},
+          "1-2": {"safe": true, "notes": "Good for cooking"},
+          "2-3": {"safe": true, "notes": "Regular use fine"}
+        },
+        "verdict": "SAFE",
+        "why": "Good fat profile, aids nutrient absorption"
+      },
+      "mustard_oil": {
+        "name": "Mustard Oil",
+        "category": "Cooking Oil",
+        "brand": "Various",
+        "main_ingredients": ["mustard oil"],
+        "safe_for_ages": ["2-3"],
+        "allergenic": false,
+        "common_allergens": ["None"],
+        "choking_risk": false,
+        "nutritional_value": "Medium - omega-3 content",
+        "preparation_methods": ["cook with in small amounts"],
+        "recommended_serving": "1/2 tsp per meal",
+        "age_specific": {
+          "0-1": {"safe": false, "notes": "Too strong for young infants"},
+          "1-2": {"safe": "CAUTION", "notes": "Can use small amounts"},
+          "2-3": {"safe": true, "notes": "Can use regularly"}
+        },
+        "verdict": "SAFE",
+        "why": "Good omega-3 content, traditional Indian oil"
+      }
+    },
+    "harmful_foods": {
+      "raw_honey": {
+        "name": "Raw Honey",
+        "category": "Danger",
+        "reason": "Botulism - Clostridium botulinum spores",
+        "safe_from_age": "12 months minimum",
+        "severity": "CRITICAL",
+        "risk": "Potentially fatal",
+        "symptoms": "Constipation, weakness, poor feeding",
+        "verdict": "UNSAFE",
+        "details": "Raw honey may contain spores that can cause botulism in infants"
+      },
+      "whole_nuts": {
+        "name": "Whole/Chopped Nuts",
+        "category": "Choking Hazard",
+        "reason": "Choking hazard and allergy risk",
+        "safe_from_age": "48 months (4 years)",
+        "severity": "CRITICAL",
+        "risk": "Choking/aspiration",
+        "verdict": "UNSAFE",
+        "details": "Whole nuts can lodge in airway. Use nut butter instead."
+      },
+      "raw_eggs": {
+        "name": "Raw/Undercooked Eggs",
+        "category": "Food Poisoning Risk",
+        "reason": "Salmonella contamination",
+        "safe_from_age": "18 months (well-cooked only)",
+        "severity": "HIGH",
+        "risk": "Salmonella infection",
+        "verdict": "UNSAFE",
+        "details": "Always cook eggs until fully hard"
+      },
+      "unpasteurized_milk": {
+        "name": "Unpasteurized Milk",
+        "category": "Food Poisoning Risk",
+        "reason": "Harmful bacteria",
+        "safe_from_age": "Never for toddlers",
+        "severity": "HIGH",
+        "risk": "Bacterial infection",
+        "verdict": "UNSAFE",
+        "details": "Only use pasteurized milk"
+      },
+      "high_salt_foods": {
+        "name": "High-Salt Foods",
+        "category": "Health Risk",
+        "reason": "Exceeds kidney capacity",
+        "safe_from_age": "Only minimal amounts",
+        "severity": "HIGH",
+        "daily_limit": "< 500mg for 0-1y, < 800mg for 1-3y",
+        "verdict": "UNSAFE in large amounts",
+        "details": "Toddlers can only handle minimal salt"
+      },
+      "honey_based_products": {
+        "name": "Honey-Based Foods",
+        "category": "Danger",
+        "reason": "Botulism risk (if contains raw honey)",
+        "safe_from_age": "12+ months",
+        "severity": "HIGH",
+        "verdict": "UNSAFE for under 12 months",
+        "details": "Check labels for raw honey"
+      },
+      "cow_milk_straight": {
+        "name": "Straight Cow's Milk",
+        "category": "Nutrition Risk",
+        "reason": "Lacks nutrients needed for infants",
+        "safe_from_age": "12 months minimum",
+        "severity": "MEDIUM",
+        "verdict": "UNSAFE for under 12 months",
+        "details": "Use formula for under 12 months"
+      },
+      "shellfish": {
+        "name": "Shellfish (Shrimp, Crab, etc.)",
+        "category": "Allergy Risk",
+        "reason": "Common allergen",
+        "safe_from_age": "12+ months (introduce carefully)",
+        "severity": "MEDIUM-HIGH",
+        "verdict": "CAUTION",
+        "details": "Start after 12 months, watch for allergic reaction"
+      },
+      "caffeine_drinks": {
+        "name": "Caffeine Drinks",
+        "category": "Stimulant",
+        "reason": "Overstimulation, sleep disruption",
+        "safe_from_age": "Never for toddlers",
+        "severity": "MEDIUM",
+        "contains": ["tea", "coffee", "cola", "chocolate drinks"],
+        "verdict": "UNSAFE",
+        "details": "No caffeine for toddlers"
+      },
+      "high_sugar_foods": {
+        "name": "High-Sugar Foods",
+        "category": "Health Risk",
+        "reason": "Tooth decay, obesity, diabetes risk",
+        "safe_from_age": "Avoid until 2+ years",
+        "severity": "MEDIUM",
+        "daily_limit": "0g for 0-1y, 5g for 1-2y, 10g for 2-3y",
+        "verdict": "UNSAFE in large amounts",
+        "details": "Minimize added sugars completely"
+      },
+      "spicy_foods": {
+        "name": "Spicy Foods",
+        "category": "Digestive Risk",
+        "reason": "Stomach irritation",
+        "safe_from_age": "12+ months mild spices",
+        "severity": "LOW-MEDIUM",
+        "verdict": "CAUTION",
+        "details": "Avoid strong spices before 12 months"
+      }
+    }
+  }
+}

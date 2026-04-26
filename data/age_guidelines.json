@@ -1,0 +1,316 @@
+{
+  "version": "1.0",
+  "age_brackets": {
+    "0-1": {
+      "name": "0-12 Months",
+      "display_name": "Infant (0-12 months)",
+      "introduction_stage": "Early Introduction Stage",
+      "primary_nutrition": "Breast milk or formula (primary source)",
+      "solids_start_age": "4-6 months",
+      "safe_foods": [
+        "breast milk",
+        "formula",
+        "iron-fortified cereals (rice, wheat)",
+        "pureed vegetables (carrot, sweet potato, pumpkin)",
+        "pureed fruits (apple, banana, pear)",
+        "boiled moong dal (8+ months)",
+        "boiled rice"
+      ],
+      "foods_to_introduce_gradually": [
+        "egg yolk (10+ months)",
+        "soft cooked vegetables",
+        "unsweetened yogurt (12+ months)"
+      ],
+      "strictly_avoid": [
+        "honey (botulism risk)",
+        "cow's milk (not suitable, use formula)",
+        "whole nuts (choking hazard, allergic risk)",
+        "undercooked/raw eggs",
+        "spicy foods",
+        "high salt foods",
+        "added sugar",
+        "citrus (acidic, before 8 months)",
+        "shellfish",
+        "peanuts"
+      ],
+      "feeding_pattern": {
+        "0-4_months": "Only breast milk or formula - 8-10 times per day",
+        "4-6_months": "Start solids 1-2 times per day + breast milk/formula 6-8 times",
+        "6-8_months": "Solids 2 times per day + breast milk/formula 5-6 times",
+        "8-10_months": "Solids 3 times + breast milk/formula 4-5 times",
+        "10-12_months": "Solids 3 times + breast milk/formula 3-4 times"
+      },
+      "texture_progression": {
+        "4-6_months": "Completely smooth purees - no lumps",
+        "6-8_months": "Smooth purees - can introduce mashed consistency",
+        "8-10_months": "Mashed with small soft pieces",
+        "10-12_months": "Mashed or small soft pieces"
+      },
+      "portion_sizes": {
+        "4-6_months": "1-2 tablespoons per meal",
+        "6-8_months": "2-4 tablespoons per meal",
+        "8-10_months": "4-6 tablespoons per meal",
+        "10-12_months": "6-8 tablespoons per meal"
+      },
+      "daily_caloric_needs": "500-900 calories",
+      "daily_meals": "3-4 meals + snacks",
+      "nutritional_focus": [
+        "Iron (fortified cereals)",
+        "Calcium (formula/breast milk)",
+        "Vitamin D (supplements as needed)",
+        "Vitamin C (from fruits/vegetables)",
+        "Fat (important for brain development)"
+      ],
+      "key_minerals": {
+        "iron_mg": "11",
+        "calcium_mg": "260-360",
+        "zinc_mg": "2"
+      },
+      "introduction_tips": [
+        "Introduce one new food at a time",
+        "Wait 3-5 days before introducing another new food",
+        "Watch for allergic reactions",
+        "Start with vegetables before fruits (avoid sweet preference)",
+        "Always supervise eating"
+      ],
+      "signs_of_readiness_for_solids": [
+        "Sits upright with minimal support",
+        "Good head control",
+        "Shows interest in food",
+        "Reaches for food",
+        "Can move food from front to back of mouth"
+      ]
+    },
+    "1-2": {
+      "name": "1-2 Years",
+      "display_name": "Toddler (1-2 years)",
+      "introduction_stage": "Transition to Family Foods",
+      "primary_nutrition": "Whole cow's milk (500ml/day) + diverse foods",
+      "safe_foods": [
+        "whole cow's milk (500ml/day)",
+        "all soft vegetables",
+        "all soft fruits",
+        "soft meats (chicken, fish, mutton)",
+        "dairy (paneer, curd, cheese)",
+        "eggs (fully cooked)",
+        "all dals (moong, masoor, toor, chana)",
+        "soft breads (roti, chapati)",
+        "soft rice dishes",
+        "nut butters (peanut, almond - spread thin)",
+        "legumes (mashed)"
+      ],
+      "foods_to_introduce": [
+        "fish (white fish, check for bones carefully)",
+        "shellfish (with caution)",
+        "full egg (after 12 months if no allergy)",
+        "whole wheat bread",
+        "unsweetened yogurt with fruits"
+      ],
+      "strictly_avoid": [
+        "raw honey",
+        "whole/chopped nuts",
+        "choking hazards (hard foods, large pieces)",
+        "high-salt foods (>800mg/day)",
+        "added sugars and sweets",
+        "caffeine drinks",
+        "unpasteurized dairy",
+        "excessive spices",
+        "processed foods with additives"
+      ],
+      "feeding_pattern": {
+        "12-18_months": "3 meals + 1-2 nutritious snacks + milk (500ml)",
+        "18-24_months": "3 meals + 1-2 snacks + milk (500ml)"
+      },
+      "texture_progression": {
+        "start": "Mashed or soft pieces (pea-sized)",
+        "mid": "Soft chopped pieces",
+        "end": "Can handle most soft family foods"
+      },
+      "portion_sizes": {
+        "meals": "150-200g per meal",
+        "snacks": "30-50g",
+        "fruits": "40-60g per serving"
+      },
+      "daily_caloric_needs": "1000-1400 calories",
+      "daily_meals": "3 meals + 1-2 snacks",
+      "nutritional_focus": [
+        "Calcium (500ml milk + dairy)",
+        "Iron (from meat, lentils, vegetables)",
+        "Protein (meat, eggs, lentils, dairy)",
+        "Fat (whole milk, ghee, oils - for brain development)",
+        "Fiber (vegetables, whole grains)",
+        "Vitamin C (fruits, vegetables)"
+      ],
+      "key_minerals": {
+        "iron_mg": "7",
+        "calcium_mg": "700",
+        "zinc_mg": "3"
+      },
+      "meal_examples": {
+        "breakfast": "Cereal with milk, or soft roti with ghee",
+        "lunch": "Khichdi with ghee, or soft rice with cooked lentils and mashed vegetables",
+        "dinner": "Soft rice or roti with cooked meat/fish and vegetables",
+        "snacks": "Fruits, yogurt, soft biscuits dipped in milk"
+      },
+      "introduction_tips": [
+        "Encourage self-feeding",
+        "Let child explore textures",
+        "Cut foods into small pieces to prevent choking",
+        "Always supervise meals",
+        "Do not rush eating",
+        "Offer variety daily"
+      ],
+      "water_intake": "200-400ml per day (from food, milk, water)"
+    },
+    "2-3": {
+      "name": "2-3 Years",
+      "display_name": "Toddler (2-3 years)",
+      "introduction_stage": "Family Foods Integration",
+      "primary_nutrition": "Diverse diet with whole milk and family foods",
+      "safe_foods": [
+        "all vegetables (cooked softly or raw if soft)",
+        "all fruits",
+        "all meats (chicken, fish, mutton, beef - soft)",
+        "all dairy (milk, yogurt, paneer, cheese)",
+        "whole eggs",
+        "all dals and legumes",
+        "whole grains (wheat, rice, oats)",
+        "bread, cereals",
+        "nut butters",
+        "mild spices (turmeric, cumin)",
+        "most family foods"
+      ],
+      "foods_to_introduce": [
+        "whole nuts (grind coarsely, not whole)",
+        "mild curries",
+        "slightly spiced foods",
+        "more complex meals"
+      ],
+      "strictly_avoid": [
+        "raw honey",
+        "whole hard nuts (chop coarsely)",
+        "very hard or sticky foods",
+        "high-salt processed foods",
+        "sugary drinks and desserts",
+        "caffeine",
+        "very spicy foods",
+        "foods with artificial colors/preservatives",
+        "fried greasy foods"
+      ],
+      "feeding_pattern": "3 meals + 1-2 snacks per day + 500ml milk",
+      "texture_progression": {
+        "start": "Soft chopped pieces",
+        "progression": "Most family foods with soft/cooked elements",
+        "advanced": "Mostly regular food but cut appropriately"
+      },
+      "portion_sizes": {
+        "meals": "200-250g per meal",
+        "snacks": "50-75g",
+        "milk": "500ml/day"
+      },
+      "daily_caloric_needs": "1400-2000 calories",
+      "daily_meals": "3 meals + 1-2 snacks",
+      "nutritional_focus": [
+        "Calcium (whole milk + dairy)",
+        "Iron (red meat, lentils, vegetables)",
+        "Protein (meat, eggs, lentils, dairy)",
+        "Fat (whole milk products, oils, ghee)",
+        "Fiber (whole grains, vegetables, fruits)",
+        "Vitamins (fruits, vegetables)",
+        "Calcium for bone development"
+      ],
+      "key_minerals": {
+        "iron_mg": "10",
+        "calcium_mg": "700",
+        "zinc_mg": "3"
+      },
+      "meal_examples": {
+        "breakfast": "Cereal/porridge with milk, or soft roti with butter and jam",
+        "lunch": "Soft rice with cooked vegetable and meat/dal curry",
+        "dinner": "Soft bread/roti with cooked vegetables and protein",
+        "snacks": "Fresh fruits, yogurt, soft biscuits, cheese"
+      },
+      "daily_schedule": {
+        "breakfast_7am": "Cereal/porridge + milk",
+        "snack_10am": "Fruit or yogurt",
+        "lunch_12pm": "Main meal with vegetables and protein",
+        "snack_3pm": "Soft biscuits or fruit",
+        "dinner_6pm": "Main meal with bread/rice"
+      },
+      "introduction_tips": [
+        "Encourage independence in eating",
+        "Teach proper chewing",
+        "Make meals family time",
+        "Offer new foods regularly",
+        "Start with mild spices",
+        "Always supervise meals",
+        "Limit screen time during eating"
+      ],
+      "feeding_skills_development": [
+        "Using utensils",
+        "Drinking from cup",
+        "Increasing self-feeding",
+        "Learning table manners"
+      ],
+      "water_intake": "500-600ml per day + milk"
+    }
+  },
+  "common_allergens": [
+    "milk",
+    "eggs",
+    "peanuts",
+    "tree nuts",
+    "fish",
+    "shellfish",
+    "soy",
+    "wheat",
+    "sesame"
+  ],
+  "choking_hazard_foods": [
+    "whole nuts",
+    "popcorn",
+    "hard candies",
+    "whole grapes",
+    "cherry tomatoes",
+    "hard vegetables (unless cooked)",
+    "raw apples (unless grated or cooked)",
+    "raisins",
+    "whole hot dogs",
+    "sticky foods"
+  ],
+  "high_sugar_limits": {
+    "0-1": {
+      "max_daily": "0g added sugar",
+      "notes": "No added sugar whatsoever"
+    },
+    "1-2": {
+      "max_daily": "5g",
+      "notes": "Minimal added sugar"
+    },
+    "2-3": {
+      "max_daily": "10g",
+      "notes": "Limit to 10g/day maximum"
+    }
+  },
+  "sodium_limits": {
+    "0-1": {
+      "max_daily": "370mg",
+      "notes": "Very minimal salt"
+    },
+    "1-2": {
+      "max_daily": "800mg",
+      "notes": "Do not add salt to foods"
+    },
+    "2-3": {
+      "max_daily": "1200mg",
+      "notes": "Minimize salt, do not add extra"
+    }
+  },
+  "introduction_guidelines": {
+    "new_food_introduction": "Introduce one new food at a time, wait 3-5 days before next",
+    "portion_start": "Start with 1-2 teaspoons, gradually increase",
+    "allergy_watch": "Watch for rashes, vomiting, diarrhea, breathing difficulty",
+    "timing": "Introduce solid foods around 6 months",
+    "vegetables_first": "Introduce vegetables before fruits to avoid sweet preference"
+  }
+}

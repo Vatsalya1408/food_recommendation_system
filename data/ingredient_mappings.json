@@ -1,0 +1,264 @@
+{
+  "version": "1.0",
+  "ingredient_aliases": {
+    "maida": ["all-purpose flour", "refined flour", "plain flour", "white flour", "wheat flour refined"],
+    "ghee": ["clarified butter", "butter fat", "desi ghee", "cow ghee"],
+    "namak": ["salt", "sodium chloride", "table salt", "sea salt"],
+    "shakkar": ["sugar", "sucrose", "white sugar", "brown sugar", "jaggery"],
+    "dahi": ["yogurt", "curd", "greek yogurt", "plain yogurt"],
+    "paneer": ["cottage cheese", "fresh cheese", "farmer cheese"],
+    "dalda": ["vegetable ghee", "vanaspati", "hydrogenated vegetable oil"],
+    "tel": ["oil", "vegetable oil", "mustard oil", "coconut oil", "sunflower oil"],
+    "atta": ["wheat flour", "chakki atta", "whole wheat flour"],
+    "besan": ["gram flour", "chickpea flour"],
+    "sooji": ["semolina", "rava", "durum wheat"],
+    "maidha": ["refined flour", "maida", "all-purpose flour"],
+    "khir": ["rice pudding", "rice dessert"],
+    "khichdi": ["rice and lentil dish", "soft comfort food"],
+    "upma": ["savory semolina dish"],
+    "halwa": ["sweet dessert", "pudding"],
+    "cheela": ["pan-fried batter cake"],
+    "kheer": ["rice pudding", "dessert"],
+    "milk_products": ["milk", "yogurt", "curd", "paneer", "cheese", "butter", "ghee"],
+    "protein_sources": ["meat", "fish", "egg", "lentils", "dals", "legumes", "paneer", "curd"],
+    "grains": ["rice", "wheat", "oats", "barley", "jowar", "bajra", "ragi"],
+    "vegetables": ["carrot", "spinach", "broccoli", "peas", "pumpkin", "tomato"],
+    "fruits": ["apple", "banana", "mango", "orange", "papaya", "watermelon"],
+    "spices": ["turmeric", "cumin", "coriander", "salt", "pepper", "chili"]
+  },
+  "harmful_ingredients": {
+    "honey": {
+      "name": "Honey (Raw/Unheated)",
+      "reason": "Botulism risk - Clostridium botulinum spores",
+      "safe_from_age": "12 months",
+      "severity": "CRITICAL",
+      "risk_level": "LIFE-THREATENING",
+      "symptoms": ["constipation", "weakness", "poor feeding", "weak cry", "poor muscle tone"],
+      "action": "NEVER give to babies under 12 months",
+      "prevalence": "Rare but serious"
+    },
+    "unpasteurized_milk": {
+      "name": "Unpasteurized/Raw Milk",
+      "reason": "Harmful bacteria (E. coli, Listeria, Salmonella)",
+      "safe_from_age": "Never for toddlers - only pasteurized",
+      "severity": "CRITICAL",
+      "risk_level": "HIGH - INFECTION",
+      "symptoms": ["diarrhea", "vomiting", "fever", "severe illness"],
+      "action": "ONLY use pasteurized milk"
+    },
+    "raw_eggs": {
+      "name": "Raw or Undercooked Eggs",
+      "reason": "Salmonella contamination",
+      "safe_from_age": "18 months (fully cooked only)",
+      "severity": "HIGH",
+      "risk_level": "FOOD POISONING",
+      "symptoms": ["diarrhea", "vomiting", "fever", "abdominal pain"],
+      "action": "Always cook eggs until hard-boiled or scrambled through"
+    },
+    "whole_nuts": {
+      "name": "Whole or Chopped Nuts",
+      "reason": "Choking hazard and allergen",
+      "safe_from_age": "4+ years for whole nuts",
+      "severity": "CRITICAL",
+      "risk_level": "CHOKING/ASPIRATION",
+      "action": "Use nut butters instead, or grind very finely after 3 years",
+      "note": "Common nuts: peanuts, almonds, cashews, walnuts"
+    },
+    "shellfish": {
+      "name": "Shellfish (Shrimp, Crab, Lobster, Oysters)",
+      "reason": "Common allergen - can cause anaphylaxis",
+      "safe_from_age": "12+ months (introduce with caution)",
+      "severity": "HIGH",
+      "risk_level": "SEVERE ALLERGY POTENTIAL",
+      "symptoms": ["hives", "swelling", "anaphylaxis", "difficulty breathing"],
+      "action": "Introduce after 12 months, watch for 2-3 hours, keep hospital contact ready"
+    },
+    "peanuts": {
+      "name": "Peanuts (Raw or Chopped)",
+      "reason": "Common allergen and choking hazard",
+      "safe_from_age": "12+ months, only as peanut butter spread thin",
+      "severity": "HIGH",
+      "risk_level": "ALLERGY/CHOKING",
+      "symptoms": ["hives", "swelling", "anaphylaxis"],
+      "action": "Start with peanut butter from 12 months, mixed into food"
+    },
+    "tree_nuts": {
+      "name": "Tree Nuts (Almonds, Cashews, Walnuts, etc.)",
+      "reason": "Common allergen and choking hazard",
+      "safe_from_age": "12+ months, only as nut butter or finely ground",
+      "severity": "HIGH",
+      "risk_level": "ALLERGY/CHOKING",
+      "action": "Avoid whole/chopped nuts, use nut butters after 12 months"
+    },
+    "trans_fats": {
+      "name": "Trans Fats (Dalda, Vanaspati, Processed Oils)",
+      "reason": "Harmful for brain development and heart",
+      "safe_from_age": "NEVER - avoid completely",
+      "severity": "HIGH",
+      "risk_level": "LONG-TERM HEALTH DAMAGE",
+      "action": "Use pure ghee or refined oils only"
+    },
+    "msg_monosodium_glutamate": {
+      "name": "MSG (Monosodium Glutamate)",
+      "reason": "Can cause allergic reactions in sensitive children",
+      "safe_from_age": "2+ years only",
+      "severity": "MEDIUM",
+      "risk_level": "ALLERGY/SENSITIVITY",
+      "symptoms": ["headache", "flushing", "tingling", "nausea"],
+      "common_in": ["instant noodles", "packaged snacks", "instant foods"]
+    },
+    "artificial_colors": {
+      "name": "Artificial Food Colors (Red 40, Yellow 5, etc.)",
+      "reason": "Can cause hyperactivity and allergic reactions",
+      "safe_from_age": "Avoid until 2+ years",
+      "severity": "MEDIUM",
+      "risk_level": "HYPERACTIVITY/ALLERGY",
+      "symptoms": ["hyperactivity", "rashes", "behavioral changes"],
+      "common_in": ["fizzy drinks", "candy", "colorful snacks"]
+    },
+    "artificial_sweeteners": {
+      "name": "Artificial Sweeteners (Aspartame, Saccharin, Sucralose)",
+      "reason": "Safety not established for toddlers",
+      "safe_from_age": "Avoid completely",
+      "severity": "MEDIUM",
+      "risk_level": "UNKNOWN LONG-TERM EFFECTS",
+      "common_in": ["diet drinks", "sugar-free foods"]
+    },
+    "caffeine": {
+      "name": "Caffeine (Coffee, Tea, Chocolate drinks, Cola)",
+      "reason": "Overstimulation, sleep disruption, anxiety",
+      "safe_from_age": "NEVER for toddlers",
+      "severity": "MEDIUM",
+      "risk_level": "OVERSTIMULATION",
+      "symptoms": ["insomnia", "irritability", "increased heart rate", "anxiety"],
+      "limits": {
+        "0-3": "0mg",
+        "note": "Even trace amounts should be avoided"
+      }
+    },
+    "high_sodium_foods": {
+      "name": "High-Sodium Foods (>800mg per serving for 1-2y)",
+      "reason": "Exceeds kidney capacity, increases hypertension risk",
+      "safe_from_age": "Minimize until 3+ years",
+      "severity": "MEDIUM-HIGH",
+      "risk_level": "KIDNEY STRESS",
+      "daily_limits": {
+        "0-1": "370mg max",
+        "1-2": "800mg max",
+        "2-3": "1200mg max"
+      },
+      "common_in": ["instant noodles", "chips", "processed foods", "pickles"],
+      "symptoms_of_excess": ["high blood pressure", "kidney stress", "increased thirst"]
+    },
+    "added_sugars": {
+      "name": "Added Sugars",
+      "reason": "Tooth decay, obesity, diabetes risk",
+      "safe_from_age": "Minimize until 2+ years",
+      "severity": "MEDIUM",
+      "risk_level": "TOOTH DECAY/OBESITY",
+      "daily_limits": {
+        "0-1": "0g",
+        "1-2": "5g max",
+        "2-3": "10g max"
+      },
+      "common_in": ["candy", "chocolate", "sugary drinks", "desserts", "many packaged foods"]
+    },
+    "phosphoric_acid": {
+      "name": "Phosphoric Acid (in colas)",
+      "reason": "Leeches calcium from bones",
+      "safe_from_age": "NEVER for toddlers",
+      "severity": "HIGH",
+      "risk_level": "BONE WEAKNESS",
+      "action": "Avoid all cola and acidic drinks"
+    },
+    "high_fat_processed_foods": {
+      "name": "High-Fat Processed Foods",
+      "reason": "Excess fat without nutrients, choking hazard",
+      "safe_from_age": "Avoid until 2+ years",
+      "severity": "MEDIUM",
+      "risk_level": "CHOKING/NUTRITION IMBALANCE",
+      "common_in": ["chips", "fried snacks", "pastries"],
+      "action": "Use natural fats (ghee, oils) instead"
+    },
+    "spicy_foods": {
+      "name": "Very Spicy Foods",
+      "reason": "Stomach irritation, heartburn",
+      "safe_from_age": "12+ months for mild spices",
+      "severity": "LOW-MEDIUM",
+      "risk_level": "GI IRRITATION",
+      "action": "Introduce mild spices gradually after 12 months"
+    }
+  },
+  "common_allergens": [
+    "milk",
+    "eggs",
+    "peanuts",
+    "tree nuts",
+    "fish",
+    "shellfish",
+    "soy",
+    "wheat",
+    "sesame",
+    "mustard (in some countries)"
+  ],
+  "big_8_allergens": [
+    "milk",
+    "eggs",
+    "peanuts",
+    "tree nuts",
+    "fish",
+    "shellfish",
+    "soy",
+    "wheat"
+  ],
+  "additive_harmful_to_toddlers": {
+    "msg": {
+      "name": "Monosodium Glutamate",
+      "appears_as": ["MSG", "Ajinomoto", "seasoning"],
+      "risky_from": "1 year onwards",
+      "avoid_in": ["instant noodles", "snack foods", "processed meats"]
+    },
+    "hfcs": {
+      "name": "High Fructose Corn Syrup",
+      "appears_as": ["HFCS", "corn syrup", "sweetener"],
+      "risky_from": "All ages for toddlers",
+      "avoid_in": ["soft drinks", "packaged foods", "juices"]
+    },
+    "bht_bha": {
+      "name": "Butylated Hydroxytoluene/Hydroxyanisole",
+      "appears_as": ["BHT", "BHA", "preservatives"],
+      "risky_from": "All ages",
+      "avoid_in": ["packaged cereals", "snacks", "processed foods"]
+    },
+    "sulfites": {
+      "name": "Sulfites",
+      "appears_as": ["SO2", "sodium sulfite", "preservative"],
+      "risky_from": "18 months onwards",
+      "avoid_in": ["dried fruits", "processed foods", "pickles"]
+    }
+  },
+  "safe_cooking_methods": [
+    "boiling",
+    "steaming",
+    "baking",
+    "grilling",
+    "pan-frying with minimal oil",
+    "slow cooking"
+  ],
+  "unsafe_cooking_methods": [
+    "deep frying",
+    "charring/browning (for very young infants)",
+    "smoking"
+  ],
+  "ingredient_safety_checklist": {
+    "when_choosing_packaged_foods": [
+      "Check ingredient list - avoid unknown/unpronounceable items",
+      "Check for allergens - especially Big 8",
+      "Check sodium content - must be <800mg per serving for 1-2y",
+      "Check sugar content - must follow age limits",
+      "Check for artificial colors/preservatives",
+      "Check manufacturing date and expiry",
+      "Check for fortification (iron, calcium beneficial)"
+    ]
+  }
+}

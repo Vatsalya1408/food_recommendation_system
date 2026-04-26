@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToddlerBites - Food Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='sidebar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='views.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fixed Left Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-inner">
+            <div class="profile-section" id="profileSection" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                <div class="profile-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="profile-greeting">
+                    <span class="greeting-text">Hi, Parent</span>
+                    <i class="fas fa-chevron-down profile-chevron" aria-hidden="true"></i>
+                </div>
+            </div>
+            <nav class="profile-dropdown" id="profileDropdown" aria-hidden="true">
+                <a href="#" class="dropdown-item active" data-view="home"><i class="fas fa-camera"></i> Analyze</a>
+                <a href="#" class="dropdown-item" data-view="profile"><i class="fas fa-user"></i> My Profile</a>
+                <a href="#" class="dropdown-item" data-view="searches"><i class="fas fa-history"></i> Recent Searches</a>
+                <a href="#" class="dropdown-item" data-view="settings"><i class="fas fa-cog"></i> Settings</a>
+                <a href="#" class="dropdown-item dropdown-item--logout" data-view="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <span class="logo-icon">🍎</span>
+                    <div>
+                        <h1 class="app-title">ToddlerBites</h1>
+                        <p class="app-subtitle">Healthy Food Recommendations</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button type="button" id="rateLimitToggle" class="btn-icon" title="Show/Hide Rate Limit">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Usage</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Rate Limit Panel (hidden by default) -->
+        <div id="rateLimitPanel" class="rate-limit-panel collapsed">
+            <div class="rate-limit-content">
+                <div class="rate-limit-info">
+                    <i class="fas fa-info-circle"></i>
+                    <span><strong>Rate Limit:</strong> <span id="requestCount">0</span> / <span id="maxRequests">3</span> requests per 90 seconds</span>
+                </div>
+                <button type="button" id="clearRateLimit" class="btn-reset">Reset Counter</button>
+            </div>
+        </div>
+
+        <!-- Main Content - View Container -->
+        <main class="main-content">
+            <div class="content-views">
+                <!-- Home / Analyze View (default) -->
+                <div id="viewHome" class="content-view active">
+                    <div class="upload-card card">
+                        <h2 class="card-title"><i class="fas fa-camera"></i> Analyze Product</h2>
+                        <p class="card-desc">Upload product images to extract ingredients and get AI-powered safety analysis for toddlers.</p>
+                        
+                        <form id="uploadForm" class="upload-form">
+                            <div class="form-group upload-group">
+                                <label for="productImage"><i class="fas fa-images"></i> Product Images</label>
+                                <div class="file-drop-zone" id="fileDropZone">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <p>Drag & drop images here or <span>browse</span></p>
+                                    <input type="file" id="productImage" multiple accept="image/*">
+                                </div>
+                                <div id="fileList" class="file-list"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ageBracket"><i class="fas fa-child"></i> Age Bracket</label>
+                                <select id="ageBracket" class="input-select">
+                                    <option value="0-1">0-1 years</option>
+                                    <option value="1-2">1-2 years</option>
+                                    <option value="2-3">2-3 years</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <i class="fas fa-search"></i>
+                                <span>Analyze Ingredients</span>
+                            </button>
+                        </form>
+                    </div>
+                    <div id="output" class="output-area"></div>
+                </div>
+
+                <!-- My Profile View -->
+                <div id="viewProfile" class="content-view">
+                    <div class="view-card card">
+                        <h2 class="card-title"><i class="fas fa-user"></i> My Profile</h2>
+                        <p class="card-desc">Manage your and your child's information.</p>
+                        <form id="profileForm" class="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="parentName"><i class="fas fa-user"></i> Parent Name</label>
+                                    <input type="text" id="parentName" class="input-field" placeholder="Your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="childName"><i class="fas fa-child"></i> Child Name</label>
+                                    <input type="text" id="childName" class="input-field" placeholder="Child's name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ageBracketProfile"><i class="fas fa-birthday-cake"></i> Age Bracket</label>
+                                <select id="ageBracketProfile" class="input-select">
+                                    <option value="0-1">0-1 years</option>
+                                    <option value="1-2" selected>1-2 years</option>
+                                    <option value="2-3">2-3 years</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="allergies"><i class="fas fa-allergies"></i> Allergies</label>
+                                <input type="text" id="allergies" class="input-field" placeholder="e.g. nuts, dairy">
+                            </div>
+                            <div class="form-group">
+                                <label for="dietPreference"><i class="fas fa-leaf"></i> Diet Preference</label>
+                                <select id="dietPreference" class="input-select">
+                                    <option value="none">No preference</option>
+                                    <option value="vegetarian">Vegetarian</option>
+                                    <option value="vegan">Vegan</option>
+                                    <option value="halal">Halal</option>
+                                    <option value="kosher">Kosher</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i>
+                                <span>Save Changes</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Recent Searches View -->
+                <div id="viewSearches" class="content-view">
+                    <div class="view-card card">
+                        <h2 class="card-title"><i class="fas fa-history"></i> Recent Searches</h2>
+                        <p class="card-desc">Your previous food analysis results.</p>
+                        <div id="searchCardsContainer" class="search-cards"></div>
+                    </div>
+                </div>
+
+                <!-- Settings View -->
+                <div id="viewSettings" class="content-view">
+                    <div class="view-card card">
+                        <h2 class="card-title"><i class="fas fa-cog"></i> Settings</h2>
+                        <p class="card-desc">Customize your app experience.</p>
+                        <div class="settings-section">
+                            <h3 class="settings-heading"><i class="fas fa-bell"></i> Notifications</h3>
+                            <div class="toggle-row">
+                                <span>Email reminders for new features</span>
+                                <label class="toggle">
+                                    <input type="checkbox" id="notifyEmail" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            <div class="toggle-row">
+                                <span>Allergy alerts</span>
+                                <label class="toggle">
+                                    <input type="checkbox" id="notifyAllergy" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="settings-section">
+                            <h3 class="settings-heading"><i class="fas fa-child"></i> Default Child Preferences</h3>
+                            <div class="toggle-row">
+                                <span>Remember last age bracket</span>
+                                <label class="toggle">
+                                    <input type="checkbox" id="rememberAge" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="settings-section">
+                            <h3 class="settings-heading"><i class="fas fa-moon"></i> Appearance</h3>
+                            <div class="toggle-row">
+                                <span>Dark mode</span>
+                                <label class="toggle">
+                                    <input type="checkbox" id="darkMode">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="settings-section">
+                            <h3 class="settings-heading"><i class="fas fa-database"></i> Data</h3>
+                            <button type="button" id="clearDataBtn" class="btn btn-outline-danger">
+                                <i class="fas fa-trash-alt"></i>
+                                <span>Clear All Search History</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div id="logoutModal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content modal-sm">
+            <div class="modal-header">
+                <h3><i class="fas fa-sign-out-alt"></i> Log Out?</h3>
+                <button type="button" class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to log out? You can sign back in anytime.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline" id="logoutCancel">Cancel</button>
+                <a href="/login" class="btn btn-danger" id="logoutConfirm">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Log Out</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='views.js') }}"></script>
+    <script src="{{ url_for('static', filename='sidebar.js') }}"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <script>
+        // Check if user is logged in
+        const loggedInUser = localStorage.getItem('loggedInUser');
+        if (!loggedInUser) {
+            window.location.href = '/login';
+        } else {
+            // Update sidebar greeting
+            const userData = JSON.parse(loggedInUser);
+            const greetingEl = document.querySelector('.greeting-text');
+            if (greetingEl) {
+                greetingEl.textContent = `Hi, ${userData.name}`;
+            }
+        }
+    </script>
+</body>
+</html>

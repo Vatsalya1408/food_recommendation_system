@@ -1,0 +1,237 @@
+/* ===================================
+   SIDEBAR - Profile Menu (Left Side)
+   ToddlerBites - Child-friendly, professional
+   =================================== */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    min-height: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+}
+
+.sidebar-inner {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Profile Section - Clickable trigger */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 14px;
+    background: linear-gradient(135deg, rgba(168, 230, 207, 0.35) 0%, rgba(170, 212, 245, 0.25) 100%);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border: 2px solid transparent;
+    user-select: none;
+}
+
+.profile-section:hover {
+    background: linear-gradient(135deg, rgba(168, 230, 207, 0.5) 0%, rgba(170, 212, 245, 0.35) 100%);
+    box-shadow: 0 4px 12px rgba(102, 187, 106, 0.15);
+}
+
+.profile-section:focus {
+    outline: none;
+    border-color: rgba(102, 187, 106, 0.6);
+}
+
+.profile-section[aria-expanded="true"] {
+    background: linear-gradient(135deg, rgba(102, 187, 106, 0.2) 0%, rgba(129, 199, 132, 0.15) 100%);
+    box-shadow: 0 4px 12px rgba(102, 187, 106, 0.2);
+}
+
+.profile-section[aria-expanded="true"] .profile-chevron {
+    transform: rotate(180deg);
+}
+
+/* Avatar */
+.profile-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #81c784 0%, #66bb6a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(102, 187, 106, 0.35);
+}
+
+.profile-greeting {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.greeting-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+.profile-chevron {
+    font-size: 12px;
+    color: #66bb6a;
+    transition: transform 0.25s ease;
+}
+
+/* Dropdown Menu - Hidden by default */
+.profile-dropdown {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 0;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(102, 187, 106, 0.2);
+}
+
+.profile-dropdown.is-open {
+    display: flex;
+    animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dropdown Items */
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #444;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item i {
+    width: 20px;
+    text-align: center;
+    color: #66bb6a;
+}
+
+.dropdown-item:hover {
+    background: rgba(168, 230, 207, 0.3);
+    color: #2e7d32;
+}
+
+.dropdown-item:focus {
+    outline: none;
+    background: rgba(168, 230, 207, 0.25);
+}
+
+/* Logout - Red styling */
+.dropdown-item--logout {
+    color: #c62828;
+    margin-top: 4px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 14px;
+}
+
+.dropdown-item--logout i {
+    color: #e57373;
+}
+
+.dropdown-item--logout:hover {
+    background: rgba(244, 67, 54, 0.1);
+    color: #b71c1c;
+}
+
+.dropdown-item--logout:hover i {
+    color: #e53935;
+}
+
+/* Main content offset for sidebar */
+body {
+    padding-left: 260px;
+}
+
+/* Responsive: Collapse sidebar on smaller screens */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 72px;
+        align-items: center;
+    }
+
+    .sidebar-inner {
+        padding: 20px 12px;
+        width: 100%;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        padding: 12px 8px;
+    }
+
+    .greeting-text {
+        display: none;
+    }
+
+    .profile-chevron {
+        display: none;
+    }
+
+    .profile-dropdown {
+        position: absolute;
+        left: 72px;
+        top: 100px;
+        min-width: 220px;
+        z-index: 1001;
+    }
+
+    body {
+        padding-left: 72px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    body {
+        padding-left: 0;
+    }
+
+    .profile-dropdown.is-open {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        top: 100%;
+        min-width: auto;
+    }
+}

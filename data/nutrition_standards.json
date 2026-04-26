@@ -1,0 +1,299 @@
+{
+  "version": "1.0",
+  "nutrition_standards": {
+    "0-1": {
+      "age_group": "0-12 months",
+      "daily_energy": {
+        "kcal": "500-900",
+        "note": "Varies by month - increases gradually"
+      },
+      "macronutrients": {
+        "protein": {
+          "grams": "10-11g",
+          "sources": ["breast milk", "formula", "egg yolk (10+ months)", "soft cooked foods"]
+        },
+        "fat": {
+          "grams": "30-35g",
+          "note": "Important for brain development - keep full-fat milk products",
+          "sources": ["breast milk", "formula"]
+        },
+        "carbohydrates": {
+          "grams": "95-145g",
+          "sources": ["cereals", "fruits", "vegetables"]
+        }
+      },
+      "micronutrients": {
+        "iron": {
+          "mg": "11",
+          "sources": ["iron-fortified cereals", "meat (8+ months)", "vegetables"],
+          "note": "Most important - use fortified cereals from 6 months"
+        },
+        "calcium": {
+          "mg": "260-360",
+          "sources": ["breast milk", "formula"],
+          "note": "Primary from formula/breast milk"
+        },
+        "zinc": {
+          "mg": "2",
+          "sources": ["fortified cereals", "meat", "vegetables"]
+        },
+        "vitamin_a": {
+          "mcg": "400",
+          "sources": ["sweet potato", "carrot", "pumpkin"],
+          "note": "Essential for eye development"
+        },
+        "vitamin_c": {
+          "mg": "40",
+          "sources": ["citrus (8+ months)", "berries", "tomato (8+ months)"],
+          "note": "Aids iron absorption"
+        },
+        "vitamin_d": {
+          "iu": "400",
+          "sources": ["formula fortified", "sunlight exposure", "supplements"],
+          "note": "Critical for bone development"
+        },
+        "vitamin_b12": {
+          "mcg": "0.4",
+          "sources": ["formula", "breast milk", "meat (8+ months)"]
+        }
+      },
+      "daily_meals": "Varies: 4-6 feedings for 0-6m, 3-4 meals for 6-12m",
+      "hydration": {
+        "water": "0ml for 0-6m (from milk), 100-150ml for 6-12m",
+        "note": "Do not give plain water to babies under 6 months"
+      }
+    },
+    "1-2": {
+      "age_group": "1-2 years",
+      "daily_energy": {
+        "kcal": "1000-1400",
+        "note": "Increases with activity"
+      },
+      "macronutrients": {
+        "protein": {
+          "grams": "13g",
+          "note": "Building growth and development",
+          "sources": ["meat", "fish", "eggs", "dairy", "lentils", "legumes"]
+        },
+        "fat": {
+          "grams": "30-35g",
+          "note": "Still important for brain development - use whole milk",
+          "sources": ["whole milk", "ghee", "oils", "butter", "meat", "dairy"]
+        },
+        "carbohydrates": {
+          "grams": "130-170g",
+          "note": "Energy for growing toddler",
+          "sources": ["grains", "bread", "rice", "vegetables", "fruits"]
+        }
+      },
+      "micronutrients": {
+        "iron": {
+          "mg": "7",
+          "sources": ["red meat", "lentils", "fortified cereals", "leafy greens"],
+          "note": "Very important - prevent anemia"
+        },
+        "calcium": {
+          "mg": "700",
+          "sources": ["milk (500ml/day)", "yogurt", "cheese", "paneer", "leafy greens"],
+          "note": "Critical for bone development"
+        },
+        "zinc": {
+          "mg": "3",
+          "sources": ["meat", "legumes", "fortified cereals", "dairy"]
+        },
+        "vitamin_a": {
+          "mcg": "300",
+          "sources": ["sweet potato", "carrot", "spinach", "mango"],
+          "note": "For vision and immunity"
+        },
+        "vitamin_c": {
+          "mg": "15",
+          "sources": ["citrus", "berries", "tomato", "papaya", "kiwi"]
+        },
+        "vitamin_d": {
+          "iu": "600",
+          "sources": ["milk (fortified)", "fish", "sunlight exposure"],
+          "note": "Calcium absorption dependent"
+        },
+        "vitamin_b12": {
+          "mcg": "0.5",
+          "sources": ["milk", "eggs", "meat", "fish", "fortified cereals"]
+        },
+        "fiber": {
+          "grams": "14-17g",
+          "note": "For digestive health",
+          "sources": ["whole grains", "vegetables", "fruits", "lentils"]
+        }
+      },
+      "daily_meals": "3 meals + 1-2 snacks + 500ml milk",
+      "hydration": {
+        "water": "200-400ml per day",
+        "note": "Include water from food and milk"
+      },
+      "meal_pattern": {
+        "breakfast": "Cereal/porridge with milk (150-200g)",
+        "mid_morning_snack": "Fruit or yogurt (50-75g)",
+        "lunch": "Grain + protein + vegetable (150-200g)",
+        "afternoon_snack": "Soft biscuits or fruit (30-50g)",
+        "dinner": "Grain + protein + vegetable (150-200g)"
+      }
+    },
+    "2-3": {
+      "age_group": "2-3 years",
+      "daily_energy": {
+        "kcal": "1400-2000",
+        "note": "Rapidly increasing with activity"
+      },
+      "macronutrients": {
+        "protein": {
+          "grams": "14g",
+          "note": "Building muscles and organs",
+          "sources": ["meat", "fish", "eggs", "dairy", "lentils", "nuts"]
+        },
+        "fat": {
+          "grams": "30-35g",
+          "note": "Still critical for brain development",
+          "sources": ["whole milk", "ghee", "oils", "meat", "nuts", "seeds"]
+        },
+        "carbohydrates": {
+          "grams": "170-250g",
+          "note": "Energy for active toddler",
+          "sources": ["grains", "bread", "rice", "pasta", "vegetables", "fruits"]
+        }
+      },
+      "micronutrients": {
+        "iron": {
+          "mg": "10",
+          "sources": ["red meat", "lentils", "dark leafy greens", "fortified cereals"],
+          "critical": true
+        },
+        "calcium": {
+          "mg": "700",
+          "sources": ["milk (500ml/day)", "yogurt", "cheese", "paneer", "vegetables"],
+          "critical": true
+        },
+        "zinc": {
+          "mg": "3",
+          "sources": ["meat", "nuts", "legumes", "seeds"]
+        },
+        "vitamin_a": {
+          "mcg": "400",
+          "sources": ["orange/yellow vegetables", "leafy greens", "fruits"]
+        },
+        "vitamin_c": {
+          "mg": "15",
+          "sources": ["citrus", "berries", "tomato", "kiwi"]
+        },
+        "vitamin_d": {
+          "iu": "600",
+          "sources": ["fortified milk", "fish", "sunlight", "egg yolk"]
+        },
+        "vitamin_b12": {
+          "mcg": "0.5-1",
+          "sources": ["meat", "fish", "eggs", "dairy"]
+        },
+        "fiber": {
+          "grams": "14-20g",
+          "sources": ["whole grains", "vegetables", "fruits", "lentils"]
+        }
+      },
+      "daily_meals": "3 meals + 1-2 snacks + 500ml milk",
+      "hydration": {
+        "water": "500-600ml per day",
+        "note": "Include water from food, milk, and drinks"
+      },
+      "meal_pattern": {
+        "breakfast": "Cereal/porridge with milk + fruit (200-250g)",
+        "mid_morning_snack": "Fruit, yogurt, or soft snack",
+        "lunch": "Grain + protein + vegetable (200-250g)",
+        "afternoon_snack": "Milk-based or fruit snack",
+        "dinner": "Grain + protein + vegetable (200-250g)"
+      }
+    }
+  },
+  "deficiency_prevention": {
+    "iron_deficiency_anemia": {
+      "why_important": "Affects brain development, growth, immunity",
+      "sources": ["fortified cereals (0-1)", "red meat (1-3)", "lentils", "leafy greens"],
+      "prevention": "Include iron-rich foods daily, pair with vitamin C for absorption",
+      "signs_of_deficiency": ["pale skin", "fatigue", "poor growth", "behavioral problems"]
+    },
+    "calcium_deficiency": {
+      "why_important": "Essential for bone development, teeth, heart function",
+      "sources": ["milk (500ml/day)", "yogurt", "cheese", "paneer"],
+      "prevention": "Ensure 500ml milk daily for 1-3 year olds",
+      "signs_of_deficiency": ["poor bone development", "weak teeth", "muscle cramps"]
+    },
+    "vitamin_d_deficiency": {
+      "why_important": "Calcium absorption, bone health, immunity",
+      "sources": ["fortified milk", "fish", "sunlight exposure", "supplements"],
+      "prevention": "Use fortified milk, ensure sun exposure (15-30 min daily)",
+      "signs_of_deficiency": ["bone deformities", "delayed growth", "dental problems"]
+    },
+    "protein_deficiency": {
+      "why_important": "Growth, muscle development, immune function",
+      "sources": ["meat", "eggs", "dairy", "lentils", "legumes"],
+      "prevention": "Include protein at each meal",
+      "signs_of_deficiency": ["poor growth", "weak muscles", "frequent infections"]
+    }
+  },
+  "diet_modification_by_need": {
+    "vegetarian_diet": {
+      "protein_sources": ["lentils", "legumes", "paneer", "curd", "eggs (if not vegan)", "nuts (after 3y)"],
+      "iron_sources": ["lentils", "leafy greens", "fortified cereals"],
+      "calcium_sources": ["milk", "yogurt", "paneer", "leafy greens"],
+      "vitamin_b12_sources": ["milk", "eggs", "fortified cereals"],
+      "challenge": "Ensure complete protein and B12"
+    },
+    "vegan_diet": {
+      "challenges": ["B12 source (must supplement)", "complete protein combinations", "calcium source"],
+      "B12_requirement": "Mandatory supplement or fortified foods",
+      "protein_combinations": ["rice + lentils", "corn + beans", "nut butters"],
+      "note": "Not recommended for very young toddlers (0-1) without expert guidance"
+    },
+    "food_allergies": {
+      "management": "Eliminate allergen, find nutritional alternatives",
+      "milk_allergy": ["Use fortified plant-based milk", "Ensure calcium from other sources", "Consult pediatrician"],
+      "nut_allergy": ["Avoid all tree nuts", "Use plant proteins", "Monitor for cross-contamination"],
+      "egg_allergy": ["Use alternative proteins", "Find egg substitutes in baking"]
+    }
+  },
+  "key_nutrition_facts": {
+    "brain_development": {
+      "critical_period": "First 3 years",
+      "nutrients_needed": ["DHA/Omega-3", "Protein", "Iron", "Zinc", "Fat (full-fat milk)"],
+      "foods": ["Fish", "Eggs", "Meat", "Dairy", "Nuts (after 3y)"]
+    },
+    "bone_development": {
+      "critical_period": "First 3 years",
+      "nutrients_needed": ["Calcium", "Vitamin D", "Phosphorus", "Magnesium"],
+      "key_action": "500ml milk daily is essential"
+    },
+    "immunity_building": {
+      "nutrients_needed": ["Vitamin C", "Zinc", "Iron", "Protein"],
+      "foods": ["Citrus", "Berries", "Meat", "Lentils", "Vegetables"]
+    }
+  },
+  "portion_size_guide": {
+    "0-1": {
+      "vegetables": "30-40g per meal",
+      "fruits": "30-50g per meal",
+      "grains": "20-30g per meal",
+      "meat": "10-15g per meal"
+    },
+    "1-2": {
+      "vegetables": "40-60g per meal",
+      "fruits": "40-60g per meal",
+      "grains": "40-60g per meal",
+      "protein": "20-30g per day total",
+      "milk": "500ml per day"
+    },
+    "2-3": {
+      "vegetables": "50-75g per meal",
+      "fruits": "50-75g per meal",
+      "grains": "60-75g per meal",
+      "protein": "30-40g per day total",
+      "milk": "500ml per day"
+    }
+  }
+}
